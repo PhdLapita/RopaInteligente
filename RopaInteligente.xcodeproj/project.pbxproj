@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
+		09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEE1E0B42300097D674 /* ViewController.swift */; };
+		09C8CDF21E0B42300097D674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF01E0B42300097D674 /* Main.storyboard */; };
+		09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDF31E0B42300097D674 /* RopaInteligente.xcdatamodeld */; };
+		09C8CDF71E0B42300097D674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF61E0B42300097D674 /* Assets.xcassets */; };
+		09C8CDFA1E0B42300097D674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF81E0B42300097D674 /* LaunchScreen.storyboard */; };
+		09C8CE051E0B42300097D674 /* RopaInteligenteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE041E0B42300097D674 /* RopaInteligenteTests.swift */; };
+		09C8CE101E0B42300097D674 /* RopaInteligenteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09C8CE011E0B42300097D674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C8CDE11E0B422F0097D674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C8CDE81E0B422F0097D674;
+			remoteInfo = RopaInteligente;
+		};
+		09C8CE0C1E0B42300097D674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C8CDE11E0B422F0097D674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C8CDE81E0B422F0097D674;
+			remoteInfo = RopaInteligente;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09C8CDEE1E0B42300097D674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09C8CDF11E0B42300097D674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09C8CDF41E0B42300097D674 /* RopaInteligente.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RopaInteligente.xcdatamodel; sourceTree = "<group>"; };
+		09C8CDF61E0B42300097D674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09C8CDF91E0B42300097D674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09C8CDFB1E0B42300097D674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C8CE001E0B42300097D674 /* RopaInteligenteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RopaInteligenteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C8CE041E0B42300097D674 /* RopaInteligenteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopaInteligenteTests.swift; sourceTree = "<group>"; };
+		09C8CE061E0B42300097D674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C8CE0B1E0B42300097D674 /* RopaInteligenteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RopaInteligenteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopaInteligenteUITests.swift; sourceTree = "<group>"; };
+		09C8CE111E0B42300097D674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09C8CDE61E0B422F0097D674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C8CDFD1E0B42300097D674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C8CE081E0B42300097D674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C8CDE01E0B422F0097D674 = {
+			isa = PBXGroup;
+			children = (
+				09C8CDEB1E0B42300097D674 /* RopaInteligente */,
+				09C8CE031E0B42300097D674 /* RopaInteligenteTests */,
+				09C8CE0E1E0B42300097D674 /* RopaInteligenteUITests */,
+				09C8CDEA1E0B42300097D674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09C8CDEA1E0B42300097D674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09C8CDE91E0B42300097D674 /* RopaInteligente.app */,
+				09C8CE001E0B42300097D674 /* RopaInteligenteTests.xctest */,
+				09C8CE0B1E0B42300097D674 /* RopaInteligenteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09C8CDEB1E0B42300097D674 /* RopaInteligente */ = {
+			isa = PBXGroup;
+			children = (
+				09C8CDEC1E0B42300097D674 /* AppDelegate.swift */,
+				09C8CDEE1E0B42300097D674 /* ViewController.swift */,
+				09C8CDF01E0B42300097D674 /* Main.storyboard */,
+				09C8CDF61E0B42300097D674 /* Assets.xcassets */,
+				09C8CDF81E0B42300097D674 /* LaunchScreen.storyboard */,
+				09C8CDFB1E0B42300097D674 /* Info.plist */,
+				09C8CDF31E0B42300097D674 /* RopaInteligente.xcdatamodeld */,
+			);
+			path = RopaInteligente;
+			sourceTree = "<group>";
+		};
+		09C8CE031E0B42300097D674 /* RopaInteligenteTests */ = {
+			isa = PBXGroup;
+			children = (
+				09C8CE041E0B42300097D674 /* RopaInteligenteTests.swift */,
+				09C8CE061E0B42300097D674 /* Info.plist */,
+			);
+			path = RopaInteligenteTests;
+			sourceTree = "<group>";
+		};
+		09C8CE0E1E0B42300097D674 /* RopaInteligenteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */,
+				09C8CE111E0B42300097D674 /* Info.plist */,
+			);
+			path = RopaInteligenteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09C8CDE81E0B422F0097D674 /* RopaInteligente */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09C8CE141E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligente" */;
+			buildPhases = (
+				09C8CDE51E0B422F0097D674 /* Sources */,
+				09C8CDE61E0B422F0097D674 /* Frameworks */,
+				09C8CDE71E0B422F0097D674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RopaInteligente;
+			productName = RopaInteligente;
+			productReference = 09C8CDE91E0B42300097D674 /* RopaInteligente.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09C8CDFF1E0B42300097D674 /* RopaInteligenteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09C8CE171E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligenteTests" */;
+			buildPhases = (
+				09C8CDFC1E0B42300097D674 /* Sources */,
+				09C8CDFD1E0B42300097D674 /* Frameworks */,
+				09C8CDFE1E0B42300097D674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09C8CE021E0B42300097D674 /* PBXTargetDependency */,
+			);
+			name = RopaInteligenteTests;
+			productName = RopaInteligenteTests;
+			productReference = 09C8CE001E0B42300097D674 /* RopaInteligenteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09C8CE0A1E0B42300097D674 /* RopaInteligenteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09C8CE1A1E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligenteUITests" */;
+			buildPhases = (
+				09C8CE071E0B42300097D674 /* Sources */,
+				09C8CE081E0B42300097D674 /* Frameworks */,
+				09C8CE091E0B42300097D674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09C8CE0D1E0B42300097D674 /* PBXTargetDependency */,
+			);
+			name = RopaInteligenteUITests;
+			productName = RopaInteligenteUITests;
+			productReference = 09C8CE0B1E0B42300097D674 /* RopaInteligenteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09C8CDE11E0B422F0097D674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = BearCreekMining;
+				TargetAttributes = {
+					09C8CDE81E0B422F0097D674 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = MSY85QY2GC;
+						ProvisioningStyle = Automatic;
+					};
+					09C8CDFF1E0B42300097D674 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = MSY85QY2GC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09C8CDE81E0B422F0097D674;
+					};
+					09C8CE0A1E0B42300097D674 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = MSY85QY2GC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09C8CDE81E0B422F0097D674;
+					};
+				};
+			};
+			buildConfigurationList = 09C8CDE41E0B422F0097D674 /* Build configuration list for PBXProject "RopaInteligente" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09C8CDE01E0B422F0097D674;
+			productRefGroup = 09C8CDEA1E0B42300097D674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09C8CDE81E0B422F0097D674 /* RopaInteligente */,
+				09C8CDFF1E0B42300097D674 /* RopaInteligenteTests */,
+				09C8CE0A1E0B42300097D674 /* RopaInteligenteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09C8CDE71E0B422F0097D674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C8CDFA1E0B42300097D674 /* LaunchScreen.storyboard in Resources */,
+				09C8CDF71E0B42300097D674 /* Assets.xcassets in Resources */,
+				09C8CDF21E0B42300097D674 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C8CDFE1E0B42300097D674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C8CE091E0B42300097D674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09C8CDE51E0B422F0097D674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */,
+				09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */,
+				09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C8CDFC1E0B42300097D674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C8CE051E0B42300097D674 /* RopaInteligenteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C8CE071E0B42300097D674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C8CE101E0B42300097D674 /* RopaInteligenteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09C8CE021E0B42300097D674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C8CDE81E0B422F0097D674 /* RopaInteligente */;
+			targetProxy = 09C8CE011E0B42300097D674 /* PBXContainerItemProxy */;
+		};
+		09C8CE0D1E0B42300097D674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C8CDE81E0B422F0097D674 /* RopaInteligente */;
+			targetProxy = 09C8CE0C1E0B42300097D674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09C8CDF01E0B42300097D674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09C8CDF11E0B42300097D674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09C8CDF81E0B42300097D674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09C8CDF91E0B42300097D674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09C8CE121E0B42300097D674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09C8CE131E0B42300097D674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09C8CE151E0B42300097D674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MSY85QY2GC;
+				INFOPLIST_FILE = RopaInteligente/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligente;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09C8CE161E0B42300097D674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MSY85QY2GC;
+				INFOPLIST_FILE = RopaInteligente/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligente;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		09C8CE181E0B42300097D674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MSY85QY2GC;
+				INFOPLIST_FILE = RopaInteligenteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligenteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RopaInteligente.app/RopaInteligente";
+			};
+			name = Debug;
+		};
+		09C8CE191E0B42300097D674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MSY85QY2GC;
+				INFOPLIST_FILE = RopaInteligenteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligenteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RopaInteligente.app/RopaInteligente";
+			};
+			name = Release;
+		};
+		09C8CE1B1E0B42300097D674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MSY85QY2GC;
+				INFOPLIST_FILE = RopaInteligenteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligenteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RopaInteligente;
+			};
+			name = Debug;
+		};
+		09C8CE1C1E0B42300097D674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MSY85QY2GC;
+				INFOPLIST_FILE = RopaInteligenteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligenteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RopaInteligente;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09C8CDE41E0B422F0097D674 /* Build configuration list for PBXProject "RopaInteligente" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C8CE121E0B42300097D674 /* Debug */,
+				09C8CE131E0B42300097D674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09C8CE141E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligente" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C8CE151E0B42300097D674 /* Debug */,
+				09C8CE161E0B42300097D674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09C8CE171E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligenteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C8CE181E0B42300097D674 /* Debug */,
+				09C8CE191E0B42300097D674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09C8CE1A1E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligenteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C8CE1B1E0B42300097D674 /* Debug */,
+				09C8CE1C1E0B42300097D674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09C8CDF31E0B42300097D674 /* RopaInteligente.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09C8CDF41E0B42300097D674 /* RopaInteligente.xcdatamodel */,
+			);
+			currentVersion = 09C8CDF41E0B42300097D674 /* RopaInteligente.xcdatamodel */;
+			path = RopaInteligente.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09C8CDE11E0B422F0097D674 /* Project object */;
+}
