@@ -419,8 +419,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MSY85QY2GC;
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligente;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.smartclothes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -432,8 +433,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MSY85QY2GC;
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.RopaInteligente;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.smartclothes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -516,6 +518,7 @@
 				09C8CE161E0B42300097D674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C8CE171E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligenteTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +527,7 @@
 				09C8CE191E0B42300097D674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09C8CE1A1E0B42300097D674 /* Build configuration list for PBXNativeTarget "RopaInteligenteUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +536,7 @@
 				09C8CE1C1E0B42300097D674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

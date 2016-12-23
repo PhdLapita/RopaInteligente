@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clicVerMas(_ sender: UIButton) {
+        UIApplication.shared.openURL(NSURL(string: "http://www.bearcreekmining.com/s/Home.asp")! as URL)
+    }
 
 }
 
