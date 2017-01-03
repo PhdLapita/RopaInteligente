@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,9 +64,76 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-9K-q7X">
+                                <rect key="frame" x="-200" y="64" width="200" height="464"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="polo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="L8o-x1-RHy">
+                                        <rect key="frame" x="10" y="20" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Ifg-bW-zjU"/>
+                                            <constraint firstAttribute="width" constant="20" id="RJn-br-rek"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx8-fT-evw">
+                                        <rect key="frame" x="45" y="15" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="SGW-7M-ffl"/>
+                                            <constraint firstAttribute="width" constant="140" id="mFX-MH-yAH"/>
+                                        </constraints>
+                                        <state key="normal" title="Polo Inteligente"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="llave_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Pss-1w-MOM">
+                                        <rect key="frame" x="10" y="53" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="HkK-zQ-wHV"/>
+                                            <constraint firstAttribute="height" constant="20" id="Mq5-Kf-Yba"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLx-9P-YGt">
+                                        <rect key="frame" x="45" y="48" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="TdV-cn-yCr"/>
+                                            <constraint firstAttribute="width" constant="140" id="odL-Ju-bA1"/>
+                                        </constraints>
+                                        <state key="normal" title="Polo Demo"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="polo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-lD-4lI">
+                                        <rect key="frame" x="10" y="86" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Tir-f1-xiX"/>
+                                            <constraint firstAttribute="width" constant="20" id="csg-ud-alx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjA-tP-fE8">
+                                        <rect key="frame" x="45" y="81" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Scc-bY-5qX"/>
+                                            <constraint firstAttribute="width" constant="140" id="uVO-PN-XV8"/>
+                                        </constraints>
+                                        <state key="normal" title="Llavero"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="JjA-tP-fE8" firstAttribute="leading" secondItem="rX3-lD-4lI" secondAttribute="trailing" constant="15" id="ANZ-K7-4eQ"/>
+                                    <constraint firstItem="HLx-9P-YGt" firstAttribute="leading" secondItem="Pss-1w-MOM" secondAttribute="trailing" constant="15" id="Qtx-OO-MKW"/>
+                                    <constraint firstAttribute="width" constant="200" id="UFT-g3-aSA"/>
+                                    <constraint firstItem="L8o-x1-RHy" firstAttribute="leading" secondItem="bX4-9K-q7X" secondAttribute="leading" constant="10" id="UXy-2m-EgQ"/>
+                                    <constraint firstItem="Pss-1w-MOM" firstAttribute="top" secondItem="L8o-x1-RHy" secondAttribute="bottom" constant="13" id="ZMF-FR-Zo4"/>
+                                    <constraint firstItem="Pss-1w-MOM" firstAttribute="leading" secondItem="bX4-9K-q7X" secondAttribute="leading" constant="10" id="gsR-1Y-uCy"/>
+                                    <constraint firstItem="wx8-fT-evw" firstAttribute="top" secondItem="bX4-9K-q7X" secondAttribute="top" constant="15" id="het-9R-3dD"/>
+                                    <constraint firstItem="JjA-tP-fE8" firstAttribute="top" secondItem="HLx-9P-YGt" secondAttribute="bottom" constant="3" id="hh1-od-vli"/>
+                                    <constraint firstItem="rX3-lD-4lI" firstAttribute="leading" secondItem="bX4-9K-q7X" secondAttribute="leading" constant="10" id="oBn-Wl-uEt"/>
+                                    <constraint firstItem="rX3-lD-4lI" firstAttribute="top" secondItem="Pss-1w-MOM" secondAttribute="bottom" constant="13" id="ug0-tM-FEF"/>
+                                    <constraint firstItem="L8o-x1-RHy" firstAttribute="top" secondItem="bX4-9K-q7X" secondAttribute="top" constant="20" id="vRp-rT-Yw6"/>
+                                    <constraint firstItem="wx8-fT-evw" firstAttribute="leading" secondItem="L8o-x1-RHy" secondAttribute="trailing" constant="15" id="wNk-vN-0Y2"/>
+                                    <constraint firstItem="HLx-9P-YGt" firstAttribute="top" secondItem="wx8-fT-evw" secondAttribute="bottom" constant="3" id="x7c-qo-7f6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="bX4-9K-q7X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="020-8p-8Kd"/>
                             <constraint firstAttribute="trailing" secondItem="HYl-iA-4NF" secondAttribute="trailing" id="B9j-sA-aPv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hVj-3h-i8R" secondAttribute="bottom" id="DeH-nq-Wvc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HYl-iA-4NF" secondAttribute="bottom" id="Fnk-NB-erJ"/>
@@ -77,11 +144,13 @@
                             <constraint firstItem="rAh-pN-Soi" firstAttribute="top" secondItem="RVE-NZ-W0I" secondAttribute="bottom" constant="-40" id="WPf-lI-Qh2"/>
                             <constraint firstItem="HYl-iA-4NF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b2p-GC-XWw"/>
                             <constraint firstItem="ZzB-hB-rn3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cin-wc-Kxq"/>
+                            <constraint firstItem="hVj-3h-i8R" firstAttribute="top" secondItem="bX4-9K-q7X" secondAttribute="bottom" id="gt3-QU-uMe"/>
                             <constraint firstAttribute="trailing" secondItem="ZzB-hB-rn3" secondAttribute="trailing" id="jE4-KK-hdO"/>
                             <constraint firstItem="RVE-NZ-W0I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="30" id="m8x-Ob-WvI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZzB-hB-rn3" secondAttribute="bottom" id="mKV-up-Uew"/>
                             <constraint firstAttribute="trailing" secondItem="hVj-3h-i8R" secondAttribute="trailing" id="maw-e5-n7O"/>
                             <constraint firstItem="ZzB-hB-rn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rG9-VX-Kyd"/>
+                            <constraint firstItem="bX4-9K-q7X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-200" id="uc9-03-Ype"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -111,12 +180,18 @@
                         <barButtonItem key="backBarButtonItem" title="Atras" id="mc7-64-GeX"/>
                         <barButtonItem key="leftBarButtonItem" title="Item" image="side_button" id="IXU-kc-5CS">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="clicMenu:" destination="BYZ-38-t0r" id="LcI-mc-emL"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sidebar" destination="uc9-03-Ype" id="bck-iL-cof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1113.75" y="38.028169014084504"/>
+            <point key="canvasLocation" x="983" y="37"/>
         </scene>
         <!--Emparejar Dispositivos-->
         <scene sceneID="sSz-55-VrF">
@@ -189,7 +264,9 @@
     <resources>
         <image name="alpaca" width="436" height="601"/>
         <image name="alpacaVolteada" width="299" height="300"/>
+        <image name="llave_icon" width="44" height="44"/>
         <image name="logoSplash" width="512" height="512"/>
+        <image name="polo_icon" width="44" height="44"/>
         <image name="side_button" width="44" height="44"/>
     </resources>
 </document>
