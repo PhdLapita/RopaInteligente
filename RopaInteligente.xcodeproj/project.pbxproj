@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02713C4D1E1CAB3E00CD5EC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
 		02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */; };
-		091C20D91E1C005400EB641D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
 		091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */; };
 		091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */; };
 		091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E01E1C1B8A00EB641D /* DatosViewController.swift */; };
@@ -22,6 +20,10 @@
 		091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */; };
 		091C20F91E1C1D5500EB641D /* LucesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */; };
 		091C20FB1E1C1D7600EB641D /* LlaveroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */; };
+		0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
+		0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
+		09B1E7F81E1DC1510050A2A2 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1E7F31E1DC1470050A2A2 /* Charts.framework */; };
+		09B1E7F91E1DC1510050A2A2 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1E7F31E1DC1470050A2A2 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
 		09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEE1E0B42300097D674 /* ViewController.swift */; };
 		09C8CDF21E0B42300097D674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF01E0B42300097D674 /* Main.storyboard */; };
@@ -33,6 +35,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		09B1E7F21E1DC1470050A2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		09B1E7F41E1DC1470050A2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		09B1E7F61E1DC1470050A2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		09B1E7FA1E1DC1510050A2A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 		09C8CE011E0B42300097D674 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09C8CDE11E0B422F0097D674 /* Project object */;
@@ -48,6 +78,20 @@
 			remoteInfo = RopaInteligente;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0928E4261E1DAEDA001500A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09B1E7F91E1DC1510050A2A2 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -65,6 +109,7 @@
 		091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorDemoVC.swift; sourceTree = "<group>"; };
 		091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesDemoVC.swift; sourceTree = "<group>"; };
 		091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveroVC.swift; sourceTree = "<group>"; };
+		09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C8CDEE1E0B42300097D674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,8 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02713C4D1E1CAB3E00CD5EC8 /* MapKit.framework in Frameworks */,
-				091C20D91E1C005400EB641D /* CoreBluetooth.framework in Frameworks */,
+				09B1E7F81E1DC1510050A2A2 /* Charts.framework in Frameworks */,
+				0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */,
+				0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +195,20 @@
 			name = LlaveroGroup;
 			sourceTree = "<group>";
 		};
+		09B1E7ED1E1DC1470050A2A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B1E7F31E1DC1470050A2A2 /* Charts.framework */,
+				09B1E7F51E1DC1470050A2A2 /* ChartsRealm.framework */,
+				09B1E7F71E1DC1470050A2A2 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		09C8CDE01E0B422F0097D674 = {
 			isa = PBXGroup;
 			children = (
+				09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */,
 				09C8CDEB1E0B42300097D674 /* RopaInteligente */,
 				09C8CE031E0B42300097D674 /* RopaInteligenteTests */,
 				09C8CE0E1E0B42300097D674 /* RopaInteligenteUITests */,
@@ -217,10 +274,12 @@
 				09C8CDE51E0B422F0097D674 /* Sources */,
 				09C8CDE61E0B422F0097D674 /* Frameworks */,
 				09C8CDE71E0B422F0097D674 /* Resources */,
+				0928E4261E1DAEDA001500A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09B1E7FB1E1DC1510050A2A2 /* PBXTargetDependency */,
 			);
 			name = RopaInteligente;
 			productName = RopaInteligente;
@@ -303,6 +362,12 @@
 			mainGroup = 09C8CDE01E0B422F0097D674;
 			productRefGroup = 09C8CDEA1E0B42300097D674 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09B1E7ED1E1DC1470050A2A2 /* Products */;
+					ProjectRef = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09C8CDE81E0B422F0097D674 /* RopaInteligente */,
@@ -311,6 +376,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09B1E7F31E1DC1470050A2A2 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 09B1E7F21E1DC1470050A2A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09B1E7F51E1DC1470050A2A2 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 09B1E7F41E1DC1470050A2A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09B1E7F71E1DC1470050A2A2 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 09B1E7F61E1DC1470050A2A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09C8CDE71E0B422F0097D674 /* Resources */ = {
@@ -382,6 +471,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		09B1E7FB1E1DC1510050A2A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 09B1E7FA1E1DC1510050A2A2 /* PBXContainerItemProxy */;
+		};
 		09C8CE021E0B42300097D674 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 09C8CDE81E0B422F0097D674 /* RopaInteligente */;
@@ -508,8 +602,13 @@
 		09C8CE151E0B42300097D674 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69EVUZX83W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/realm-swift-2.1.2/ios/swift-3.0.2",
+				);
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,8 +621,13 @@
 		09C8CE161E0B42300097D674 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 69EVUZX83W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/realm-swift-2.1.2/ios/swift-3.0.2",
+				);
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Charts
 class GraficaViewController: UIViewController {
 
     override func viewDidLoad() {

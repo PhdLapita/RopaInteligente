@@ -15,12 +15,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setStatusBarBackgroundColor(color: #colorLiteral(red: 0.9019607843, green: 0.2901960784, blue: 0.09803921569, alpha: 1))
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func setStatusBarBackgroundColor(color: UIColor) {
+        
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
+        
+        statusBar.backgroundColor = color
     }
 
     @IBAction func clicVerMas(_ sender: UIButton) {

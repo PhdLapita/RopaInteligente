@@ -29,6 +29,7 @@ class MapaViewController: UIViewController {
     func thumbsUpButtonPressed() {
         print("thumbs up button pressed")
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
