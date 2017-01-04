@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -503,10 +503,10 @@
             </objects>
             <point key="canvasLocation" x="3649" y="-3914"/>
         </scene>
-        <!--View Controller-->
+        <!--Ubicación-->
         <scene sceneID="HkM-wW-XXD">
             <objects>
-                <viewController id="3fB-Rk-c1F" sceneMemberID="viewController">
+                <viewController id="3fB-Rk-c1F" customClass="MapaViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FkO-to-wCR"/>
                         <viewControllerLayoutGuide type="bottom" id="cWa-a6-4S3"/>
@@ -514,13 +514,38 @@
                     <view key="view" contentMode="scaleToFill" id="2cn-Bv-Ggh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FoG-fM-tZu">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            </mapView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKU-fb-oUj">
+                                <rect key="frame" x="264" y="463" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.1129916934" green="1" blue="0.37284648860000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Aa9-zp-lj9"/>
+                                    <constraint firstAttribute="width" constant="40" id="lX2-O6-6kA"/>
+                                </constraints>
+                                <state key="normal" image="location_icon"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WKU-fb-oUj" firstAttribute="trailing" secondItem="2cn-Bv-Ggh" secondAttribute="trailingMargin" id="7D7-LO-VxY"/>
+                            <constraint firstItem="cWa-a6-4S3" firstAttribute="top" secondItem="WKU-fb-oUj" secondAttribute="bottom" constant="16" id="A0X-eh-ahc"/>
+                            <constraint firstAttribute="trailing" secondItem="FoG-fM-tZu" secondAttribute="trailing" id="Uo2-R4-hxS"/>
+                            <constraint firstItem="FoG-fM-tZu" firstAttribute="top" secondItem="FkO-to-wCR" secondAttribute="bottom" id="ZLj-U2-YrF"/>
+                            <constraint firstItem="FoG-fM-tZu" firstAttribute="leading" secondItem="2cn-Bv-Ggh" secondAttribute="leading" id="lLK-un-Asf"/>
+                            <constraint firstItem="cWa-a6-4S3" firstAttribute="top" secondItem="FoG-fM-tZu" secondAttribute="bottom" id="qW1-58-j70"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="0vz-dY-iPT"/>
+                    <tabBarItem key="tabBarItem" title="Ubicación" image="mapa_icon" id="0vz-dY-iPT"/>
+                    <connections>
+                        <outlet property="btnLocalizar" destination="WKU-fb-oUj" id="7tZ-M5-qOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1y-n4-3Qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3651" y="-4625"/>
+            <point key="canvasLocation" x="3650.625" y="-4625.7042253521131"/>
         </scene>
         <!--Polo Inteligente-->
         <scene sceneID="Vxw-cQ-fgN">
@@ -543,7 +568,7 @@
             </objects>
             <point key="canvasLocation" x="2689" y="-3099"/>
         </scene>
-        <!--Grafica-->
+        <!--Gráfica-->
         <scene sceneID="mgL-c3-lL3">
             <objects>
                 <viewController id="fKT-yE-1Uv" sceneMemberID="viewController">
@@ -556,13 +581,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Grafica" image="grafica_icon" id="4g0-Rj-T6F"/>
+                    <tabBarItem key="tabBarItem" title="Gráfica" image="grafica_icon" id="4g0-Rj-T6F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3654" y="-3254"/>
         </scene>
-        <!--View Controller-->
+        <!--Vibrador-->
         <scene sceneID="W0f-Yz-87A">
             <objects>
                 <viewController id="Omx-gR-oXP" sceneMemberID="viewController">
@@ -575,13 +600,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="phD-1O-S0f"/>
+                    <tabBarItem key="tabBarItem" title="Vibrador" image="vibrador_icon" id="phD-1O-S0f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNJ-z0-cbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3651" y="-2577"/>
         </scene>
-        <!--View Controller-->
+        <!--Luces-->
         <scene sceneID="6jp-1w-4H9">
             <objects>
                 <viewController id="b7f-ip-pra" sceneMemberID="viewController">
@@ -594,7 +619,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="HMX-Rh-Mex"/>
+                    <tabBarItem key="tabBarItem" title="Luces" image="luces_icon" id="HMX-Rh-Mex"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taN-7S-rIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -631,8 +656,12 @@
         <image name="demo_icon" width="44" height="44"/>
         <image name="grafica_icon" width="44" height="44"/>
         <image name="llave_icon" width="44" height="44"/>
+        <image name="location_icon" width="66" height="66"/>
         <image name="logoSplash" width="512" height="512"/>
+        <image name="luces_icon" width="22" height="22"/>
+        <image name="mapa_icon" width="22" height="22"/>
         <image name="polo_icon" width="44" height="44"/>
         <image name="side_button" width="44" height="44"/>
+        <image name="vibrador_icon" width="22" height="22"/>
     </resources>
 </document>

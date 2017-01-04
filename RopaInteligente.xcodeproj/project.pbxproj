@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02713C4D1E1CAB3E00CD5EC8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
+		02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */; };
 		091C20D91E1C005400EB641D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
 		091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */; };
 		091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ubicacion.swift; sourceTree = "<group>"; };
 		091C20D81E1C005400EB641D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmparejarTableViewController.swift; sourceTree = "<group>"; };
 		091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02713C4D1E1CAB3E00CD5EC8 /* MapKit.framework in Frameworks */,
 				091C20D91E1C005400EB641D /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +111,7 @@
 		091C20D71E1C005400EB641D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */,
 				091C20D81E1C005400EB641D /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
@@ -172,12 +178,13 @@
 				09C8CDEE1E0B42300097D674 /* ViewController.swift */,
 				091C20EA1E1C1C2E00EB641D /* LlaveroGroup */,
 				091C20E91E1C1C1200EB641D /* PoloDemo */,
-				09C8CDF01E0B42300097D674 /* Main.storyboard */,
+				091C20E81E1C1BCF00EB641D /* PoloInteligente */,
 				09C8CDF61E0B42300097D674 /* Assets.xcassets */,
+				09C8CDF01E0B42300097D674 /* Main.storyboard */,
 				09C8CDF81E0B42300097D674 /* LaunchScreen.storyboard */,
 				09C8CDFB1E0B42300097D674 /* Info.plist */,
 				09C8CDF31E0B42300097D674 /* RopaInteligente.xcdatamodeld */,
-				091C20E81E1C1BCF00EB641D /* PoloInteligente */,
+				02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */,
 			);
 			path = RopaInteligente;
 			sourceTree = "<group>";
@@ -344,6 +351,7 @@
 				09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */,
 				091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */,
 				091C20E71E1C1BC100EB641D /* LucesViewController.swift in Sources */,
+				02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */,
 				091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */,
 				091C20FB1E1C1D7600EB641D /* LlaveroVC.swift in Sources */,
 				09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */,

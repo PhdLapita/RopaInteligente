@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import MapKit
 
 class MapaViewController: UIViewController {
-
+    
+    @IBOutlet weak var btnLocalizar: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ///let button = UIButton(type: .custom)
+        btnLocalizar.frame = CGRect(x: 264, y: 463, width: 40, height: 40)
+        btnLocalizar.layer.cornerRadius = 0.5 * btnLocalizar.bounds.size.width
+        btnLocalizar.clipsToBounds = true
+        
+        btnLocalizar.setImage(UIImage(named:"location_icon.png"), for: .normal)
+        btnLocalizar.addTarget(self, action: #selector(thumbsUpButtonPressed), for: .touchUpInside)
+        view.addSubview(btnLocalizar)
         // Do any additional setup after loading the view.
     }
-
+    func thumbsUpButtonPressed() {
+        print("thumbs up button pressed")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
