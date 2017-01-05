@@ -21,7 +21,6 @@
 		091C20F51E1C1D1100EB641D /* GraficaDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F41E1C1D1100EB641D /* GraficaDemoVC.swift */; };
 		091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */; };
 		091C20F91E1C1D5500EB641D /* LucesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */; };
-		091C20FB1E1C1D7600EB641D /* LlaveroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */; };
 		0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
 		0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
 		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
@@ -32,6 +31,9 @@
 		09C8CDFA1E0B42300097D674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF81E0B42300097D674 /* LaunchScreen.storyboard */; };
 		09C8CE051E0B42300097D674 /* RopaInteligenteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE041E0B42300097D674 /* RopaInteligenteTests.swift */; };
 		09C8CE101E0B42300097D674 /* RopaInteligenteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */; };
+		09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */; };
+		09F199A71E1EB4B700C1EEE6 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A61E1EB4B700C1EEE6 /* IconCell.swift */; };
+		09F199A91E1EDED800C1EEE6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A81E1EDED800C1EEE6 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +111,6 @@
 		091C20F41E1C1D1100EB641D /* GraficaDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficaDemoVC.swift; sourceTree = "<group>"; };
 		091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorDemoVC.swift; sourceTree = "<group>"; };
 		091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesDemoVC.swift; sourceTree = "<group>"; };
-		091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveroVC.swift; sourceTree = "<group>"; };
 		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C8CDEE1E0B42300097D674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +125,9 @@
 		09C8CE0B1E0B42300097D674 /* RopaInteligenteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RopaInteligenteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopaInteligenteUITests.swift; sourceTree = "<group>"; };
 		09C8CE111E0B42300097D674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveroCollectionVC.swift; sourceTree = "<group>"; };
+		09F199A61E1EB4B700C1EEE6 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
+		09F199A81E1EDED800C1EEE6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +204,8 @@
 		091C20EA1E1C1C2E00EB641D /* LlaveroGroup */ = {
 			isa = PBXGroup;
 			children = (
-				091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */,
+				09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */,
+				09F199A61E1EB4B700C1EEE6 /* IconCell.swift */,
 			);
 			name = LlaveroGroup;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				09C8CDFB1E0B42300097D674 /* Info.plist */,
 				09C8CDF31E0B42300097D674 /* RopaInteligente.xcdatamodeld */,
 				02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */,
+				09F199A81E1EDED800C1EEE6 /* File.swift */,
 			);
 			path = RopaInteligente;
 			sourceTree = "<group>";
@@ -436,18 +442,20 @@
 				091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */,
 				091C20F51E1C1D1100EB641D /* GraficaDemoVC.swift in Sources */,
 				091C20F91E1C1D5500EB641D /* LucesDemoVC.swift in Sources */,
+				09F199A71E1EB4B700C1EEE6 /* IconCell.swift in Sources */,
 				09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */,
 				09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */,
 				091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */,
+				09F199A91E1EDED800C1EEE6 /* File.swift in Sources */,
 				091C20E71E1C1BC100EB641D /* LucesViewController.swift in Sources */,
 				02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */,
 				091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */,
-				091C20FB1E1C1D7600EB641D /* LlaveroVC.swift in Sources */,
 				09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */,
 				091C20E31E1C1B9A00EB641D /* GraficaViewController.swift in Sources */,
 				091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */,
 				091C20F11E1C1CA700EB641D /* MapaDemoVC.swift in Sources */,
 				091C20F31E1C1CFC00EB641D /* DatosDemoVC.swift in Sources */,
+				09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */,
 				091C20E51E1C1BB500EB641D /* VibradorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

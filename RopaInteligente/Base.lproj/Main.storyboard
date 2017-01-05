@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,6 +84,7 @@
                                             <color key="titleColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="clicPoloInteligente:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQK-Tj-L1x"/>
                                             <segue destination="BR0-d4-sYy" kind="show" id="bYK-J2-8Sd"/>
                                         </connections>
                                     </button>
@@ -104,6 +105,7 @@
                                             <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="clicPoloDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="25M-k3-Zec"/>
                                             <segue destination="0ge-ds-Bei" kind="show" id="D7j-CH-7Tc"/>
                                         </connections>
                                     </button>
@@ -124,6 +126,7 @@
                                             <color key="titleColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="clicLlavero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6FP-oK-fQd"/>
                                             <segue destination="DQQ-91-kEW" kind="show" id="E4E-H5-H3U"/>
                                         </connections>
                                     </button>
@@ -242,9 +245,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="hRQ-8F-QCD" kind="show" id="jiK-L9-NoY"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -293,9 +293,6 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="yFf-CN-Hpg" kind="show" id="SR1-8l-jgW"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -307,7 +304,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWT-5y-d7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763" y="-3099"/>
+            <point key="canvasLocation" x="844" y="-3099"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="zjY-Ez-sWU">
@@ -398,9 +395,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Zc9-L2-b8o" kind="show" id="l0B-iC-o4q"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -412,6 +406,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5W-B5-CZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="983" y="2357"/>
+        </scene>
+        <!--Llavero CollectionVC-->
+        <scene sceneID="rBj-yg-xke">
+            <objects>
+                <collectionViewController storyboardIdentifier="llaveros" id="5eF-FI-LJn" customClass="LlaveroCollectionVC" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="6Di-ek-g9d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lTV-Hp-6SY">
+                            <size key="itemSize" width="90" height="90"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IconCell" id="L0I-Xb-JYU" customClass="IconCell" customModule="RopaInteligente" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celular_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pBi-Pj-tft">
+                                            <rect key="frame" x="20" y="10" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="M5R-lj-Yji"/>
+                                                <constraint firstAttribute="height" constant="50" id="ybe-EC-q88"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billetera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqT-k9-qZz">
+                                            <rect key="frame" x="15.5" y="64.5" width="60.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="pBi-Pj-tft" firstAttribute="centerX" secondItem="L0I-Xb-JYU" secondAttribute="centerX" id="Ryc-Lq-vLU"/>
+                                    <constraint firstAttribute="bottom" secondItem="NqT-k9-qZz" secondAttribute="bottom" constant="5" id="UB0-Yt-7nO"/>
+                                    <constraint firstItem="pBi-Pj-tft" firstAttribute="top" secondItem="L0I-Xb-JYU" secondAttribute="top" constant="10" id="Zfx-G0-Nap"/>
+                                    <constraint firstItem="NqT-k9-qZz" firstAttribute="centerX" secondItem="L0I-Xb-JYU" secondAttribute="centerX" id="iKq-J2-n4q"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imgIcon" destination="pBi-Pj-tft" id="Q7M-9G-26B"/>
+                                    <outlet property="txtDescripcion" destination="NqT-k9-qZz" id="12E-tc-TqC"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="5eF-FI-LJn" id="aQq-aO-c7l"/>
+                            <outlet property="delegate" destination="5eF-FI-LJn" id="0hg-8c-oQG"/>
+                        </connections>
+                    </collectionView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdd-dA-30D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.5" y="2356.6901408450703"/>
         </scene>
         <!--Item-->
         <scene sceneID="VWS-cs-aG0">
@@ -431,24 +485,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2z-cA-dmP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4134" y="1527"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="vzN-Xc-sqq">
-            <objects>
-                <viewController id="Zc9-L2-b8o" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A4E-je-ycX"/>
-                        <viewControllerLayoutGuide type="bottom" id="XZe-1a-w8b"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="r8o-HM-Ce7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cfy-2B-zdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3849" y="2357"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="JPH-4Y-zgd">
@@ -472,7 +508,8 @@
         <!--Demo-->
         <scene sceneID="An6-7p-7vq">
             <objects>
-                <tabBarController title="Demo" id="hRQ-8F-QCD" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="demo" title="Demo" id="hRQ-8F-QCD" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="sOs-Uq-7N2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -490,7 +527,7 @@
             </objects>
             <point key="canvasLocation" x="2859" y="58"/>
         </scene>
-        <!--Sensores-->
+        <!--Polo Inteligente-->
         <scene sceneID="t2i-k3-FYy">
             <objects>
                 <viewController id="ufJ-Tc-xqI" sceneMemberID="viewController">
@@ -728,13 +765,16 @@
                             <constraint firstAttribute="trailing" secondItem="TDi-ab-n9W" secondAttribute="trailing" id="vz2-tB-Pzc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sensores" image="datos_icon" id="Qsd-5k-2DD"/>
+                    <navigationItem key="navigationItem" title="Polo Inteligente" id="kPc-eP-drJ">
+                        <barButtonItem key="backBarButtonItem" title="atras" id="oGe-Lu-cOz"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="6HB-iT-57z"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rd6-nk-yrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3648.75" y="-3914.7887323943664"/>
+            <point key="canvasLocation" x="4646.25" y="-3914.7887323943664"/>
         </scene>
-        <!--Ubicación-->
+        <!--Polo Inteligente-->
         <scene sceneID="HkM-wW-XXD">
             <objects>
                 <viewController id="3fB-Rk-c1F" customClass="MapaViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
@@ -772,39 +812,42 @@
                             <constraint firstItem="cWa-a6-4S3" firstAttribute="top" secondItem="FoG-fM-tZu" secondAttribute="bottom" id="qW1-58-j70"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ubicación" image="mapa_icon" id="0vz-dY-iPT"/>
+                    <navigationItem key="navigationItem" title="Polo Inteligente" id="icm-JN-MZi">
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="Gun-br-Fs5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnLocalizar" destination="WKU-fb-oUj" id="7tZ-M5-qOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1y-n4-3Qt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3650.625" y="-4625.7042253521131"/>
+            <point key="canvasLocation" x="4648.125" y="-4625.7042253521131"/>
         </scene>
         <!--Polo Inteligente-->
         <scene sceneID="Vxw-cQ-fgN">
             <objects>
-                <tabBarController title="Polo Inteligente" id="yFf-CN-Hpg" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="polo" title="Polo Inteligente" id="yFf-CN-Hpg" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="14o-BC-zTq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="selectedImageTintColor" red="0.90196078430000004" green="0.2901960784" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3fB-Rk-c1F" kind="relationship" relationship="viewControllers" id="U4b-2n-9DS"/>
-                        <segue destination="ufJ-Tc-xqI" kind="relationship" relationship="viewControllers" id="jel-Z7-3CJ"/>
-                        <segue destination="fKT-yE-1Uv" kind="relationship" relationship="viewControllers" id="6mB-dG-Phj"/>
-                        <segue destination="Omx-gR-oXP" kind="relationship" relationship="viewControllers" id="cHV-BJ-o1t"/>
-                        <segue destination="b7f-ip-pra" kind="relationship" relationship="viewControllers" id="56z-yb-vTg"/>
+                        <segue destination="GLE-Zc-AMx" kind="relationship" relationship="viewControllers" id="U4b-2n-9DS"/>
+                        <segue destination="cNF-IZ-hpU" kind="relationship" relationship="viewControllers" id="jel-Z7-3CJ"/>
+                        <segue destination="1wt-25-4Hr" kind="relationship" relationship="viewControllers" id="6mB-dG-Phj"/>
+                        <segue destination="HQT-qi-MRi" kind="relationship" relationship="viewControllers" id="cHV-BJ-o1t"/>
+                        <segue destination="HRa-Um-nZ8" kind="relationship" relationship="viewControllers" id="56z-yb-vTg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvY-f2-lzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2689" y="-3099"/>
         </scene>
-        <!--Gráfica-->
+        <!--Polo Inteligente-->
         <scene sceneID="mgL-c3-lL3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="fKT-yE-1Uv" customClass="GraficaViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mbX-Jz-Ln4"/>
@@ -839,13 +882,15 @@
                             <constraint firstItem="088-1e-TJg" firstAttribute="leading" secondItem="EoS-DS-6cd" secondAttribute="leading" id="iVc-hQ-U9R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gráfica" image="grafica_icon" id="4g0-Rj-T6F"/>
+                    <navigationItem key="navigationItem" title="Polo Inteligente" id="EDO-Qc-w8q">
+                        <barButtonItem key="backBarButtonItem" title="atras" id="Xg9-Am-Mb2"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="IEr-bv-vY1"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3654" y="-3254"/>
+            <point key="canvasLocation" x="4650" y="-3254.5774647887324"/>
         </scene>
-        <!--Vibrador-->
+        <!--Polo Inteligente-->
         <scene sceneID="W0f-Yz-87A">
             <objects>
                 <viewController id="Omx-gR-oXP" sceneMemberID="viewController">
@@ -889,13 +934,16 @@
                             <constraint firstItem="gv4-X8-mS0" firstAttribute="leading" secondItem="6M1-Ul-kg3" secondAttribute="leading" id="yIk-7v-R1b"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Vibrador" image="vibrador_icon" id="phD-1O-S0f"/>
+                    <navigationItem key="navigationItem" title="Polo Inteligente" id="FmD-Na-TY2">
+                        <barButtonItem key="backBarButtonItem" title="atras" id="jA1-fh-RZU"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="qCQ-ZK-KFK"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNJ-z0-cbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3651" y="-2577"/>
+            <point key="canvasLocation" x="4646.25" y="-2582.7464788732395"/>
         </scene>
-        <!--Luces-->
+        <!--Polo Inteligente-->
         <scene sceneID="6jp-1w-4H9">
             <objects>
                 <viewController id="b7f-ip-pra" sceneMemberID="viewController">
@@ -906,13 +954,27 @@
                     <view key="view" contentMode="scaleToFill" id="zdK-FD-89v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iroman_incoloro" translatesAutoresizingMaskIntoConstraints="NO" id="Ojz-Cw-8Z3">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ojz-Cw-8Z3" secondAttribute="trailing" id="2Us-Ry-awX"/>
+                            <constraint firstItem="Ojz-Cw-8Z3" firstAttribute="leading" secondItem="zdK-FD-89v" secondAttribute="leading" id="7tW-Qg-V0w"/>
+                            <constraint firstItem="Ojz-Cw-8Z3" firstAttribute="top" secondItem="pQ0-Pv-T1X" secondAttribute="bottom" id="xwh-La-TIp"/>
+                            <constraint firstItem="pd7-jJ-3u8" firstAttribute="top" secondItem="Ojz-Cw-8Z3" secondAttribute="bottom" id="zDO-J4-ISu"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Luces" image="luces_icon" id="HMX-Rh-Mex"/>
+                    <navigationItem key="navigationItem" title="Polo Inteligente" id="QvV-Ou-0Zw">
+                        <barButtonItem key="backBarButtonItem" title="atras" id="kbd-mF-tI8"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="MZY-MH-fOq"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taN-7S-rIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3651" y="-1871"/>
+            <point key="canvasLocation" x="4648.125" y="-1871.8309859154929"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P0J-PM-DBR">
@@ -937,16 +999,114 @@
             </objects>
             <point key="canvasLocation" x="116.25" y="38.028169014084504"/>
         </scene>
+        <!--Ubicación-->
+        <scene sceneID="b48-O3-QQY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GLE-Zc-AMx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ubicación" image="mapa_icon" id="0vz-dY-iPT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jwz-ir-976">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3fB-Rk-c1F" kind="relationship" relationship="rootViewController" id="aoL-gV-9Fy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOJ-Nn-giv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3650.625" y="-4625.7042253521131"/>
+        </scene>
+        <!--Sensores-->
+        <scene sceneID="vqo-wp-4yd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNF-IZ-hpU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sensores" image="datos_icon" id="Qsd-5k-2DD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PDQ-pQ-PoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ufJ-Tc-xqI" kind="relationship" relationship="rootViewController" id="UNn-Un-67D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBD-96-imE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3648.75" y="-3914.7887323943664"/>
+        </scene>
+        <!--Gráfica-->
+        <scene sceneID="cff-38-Aqd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1wt-25-4Hr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gráfica" image="grafica_icon" id="4g0-Rj-T6F"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dgs-5j-zpU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fKT-yE-1Uv" kind="relationship" relationship="rootViewController" id="CGa-2W-fwv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLs-nz-NXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652.5" y="-3254.5774647887324"/>
+        </scene>
+        <!--Vibrador-->
+        <scene sceneID="Qbj-Rc-chc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HQT-qi-MRi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Vibrador" image="vibrador_icon" id="phD-1O-S0f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WBf-4q-vPF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Omx-gR-oXP" kind="relationship" relationship="rootViewController" id="U0a-Fg-hcF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3w-9O-xDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3648.75" y="-2582.7464788732395"/>
+        </scene>
+        <!--Luces-->
+        <scene sceneID="LI7-f6-Xda">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HRa-Um-nZ8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Luces" image="luces_icon" id="HMX-Rh-Mex"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TP9-iB-LLB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b7f-ip-pra" kind="relationship" relationship="rootViewController" id="alv-DM-o1Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRi-5g-6Tw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3650.625" y="-1871.8309859154929"/>
+        </scene>
     </scenes>
     <resources>
         <image name="alegre_icon" width="44" height="44"/>
         <image name="alpaca" width="436" height="601"/>
         <image name="alpacaVolteada" width="299" height="300"/>
+        <image name="back_button" width="44" height="44"/>
+        <image name="celular_icon" width="50" height="50"/>
         <image name="corazon_icon" width="44" height="44"/>
         <image name="datos_icon" width="22" height="22"/>
         <image name="demo_icon" width="44" height="44"/>
         <image name="grafica_icon" width="22" height="22"/>
         <image name="humano" width="270" height="360"/>
+        <image name="iroman_incoloro" width="300" height="300"/>
         <image name="llave_icon" width="44" height="44"/>
         <image name="location_icon" width="44" height="44"/>
         <image name="logoSplash" width="512" height="512"/>

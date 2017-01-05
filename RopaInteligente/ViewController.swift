@@ -8,7 +8,7 @@
 
 import UIKit
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var sidebar: NSLayoutConstraint!
     
     var menuShowing = false
@@ -45,6 +45,22 @@ class ViewController: UIViewController {
         menuShowing = !menuShowing
 
     }
+    
+    @IBAction func clicPoloInteligente(_ sender: UIButton) {
+        UserDefaults.standard.setValue("1", forKey: "omo")
+    }
+    
+    @IBAction func clicPoloDemo(_ sender: UIButton) {
+        UserDefaults.standard.setValue("2", forKey: "omo")
+
+    }
+    
+    @IBAction func clicLlavero(_ sender: UIButton) {
+        UserDefaults.standard.setValue("3", forKey: "omo")
+    }
+    
+    
+    
 
 }
 
