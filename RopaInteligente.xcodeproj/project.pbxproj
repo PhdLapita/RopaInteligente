@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */; };
+		02E114C01E1DEAE60035ED20 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E114BB1E1DEACF0035ED20 /* Charts.framework */; };
+		02E114C11E1DEAE60035ED20 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E114BB1E1DEACF0035ED20 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */; };
 		091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */; };
 		091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E01E1C1B8A00EB641D /* DatosViewController.swift */; };
@@ -22,8 +24,6 @@
 		091C20FB1E1C1D7600EB641D /* LlaveroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */; };
 		0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
 		0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
-		09B1E7F81E1DC1510050A2A2 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1E7F31E1DC1470050A2A2 /* Charts.framework */; };
-		09B1E7F91E1DC1510050A2A2 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1E7F31E1DC1470050A2A2 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
 		09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEE1E0B42300097D674 /* ViewController.swift */; };
 		09C8CDF21E0B42300097D674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF01E0B42300097D674 /* Main.storyboard */; };
@@ -35,30 +35,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09B1E7F21E1DC1470050A2A2 /* PBXContainerItemProxy */ = {
+		02E114BA1E1DEACF0035ED20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			containerPortal = 02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F241D8110E600722320;
 			remoteInfo = Charts;
 		};
-		09B1E7F41E1DC1470050A2A2 /* PBXContainerItemProxy */ = {
+		02E114BC1E1DEACF0035ED20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			containerPortal = 02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06B120D51D811E6200D14B02;
 			remoteInfo = ChartsRealm;
 		};
-		09B1E7F61E1DC1470050A2A2 /* PBXContainerItemProxy */ = {
+		02E114BE1E1DEACF0035ED20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			containerPortal = 02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		09B1E7FA1E1DC1510050A2A2 /* PBXContainerItemProxy */ = {
+		02E114C21E1DEAE60035ED20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+			containerPortal = 02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
@@ -86,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				09B1E7F91E1DC1510050A2A2 /* Charts.framework in Embed Frameworks */,
+				02E114C11E1DEAE60035ED20 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +96,7 @@
 /* Begin PBXFileReference section */
 		02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ubicacion.swift; sourceTree = "<group>"; };
+		02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		091C20D81E1C005400EB641D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmparejarTableViewController.swift; sourceTree = "<group>"; };
 		091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorDemoVC.swift; sourceTree = "<group>"; };
 		091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesDemoVC.swift; sourceTree = "<group>"; };
 		091C20FA1E1C1D7600EB641D /* LlaveroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveroVC.swift; sourceTree = "<group>"; };
-		09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C8CDEE1E0B42300097D674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B1E7F81E1DC1510050A2A2 /* Charts.framework in Frameworks */,
+				02E114C01E1DEAE60035ED20 /* Charts.framework in Frameworks */,
 				0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */,
 				0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */,
 			);
@@ -154,6 +154,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02E114B51E1DEACF0035ED20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02E114BB1E1DEACF0035ED20 /* Charts.framework */,
+				02E114BD1E1DEACF0035ED20 /* ChartsRealm.framework */,
+				02E114BF1E1DEACF0035ED20 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		091C20D71E1C005400EB641D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,20 +205,10 @@
 			name = LlaveroGroup;
 			sourceTree = "<group>";
 		};
-		09B1E7ED1E1DC1470050A2A2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				09B1E7F31E1DC1470050A2A2 /* Charts.framework */,
-				09B1E7F51E1DC1470050A2A2 /* ChartsRealm.framework */,
-				09B1E7F71E1DC1470050A2A2 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		09C8CDE01E0B422F0097D674 = {
 			isa = PBXGroup;
 			children = (
-				09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */,
+				02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */,
 				09C8CDEB1E0B42300097D674 /* RopaInteligente */,
 				09C8CE031E0B42300097D674 /* RopaInteligenteTests */,
 				09C8CE0E1E0B42300097D674 /* RopaInteligenteUITests */,
@@ -279,7 +279,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				09B1E7FB1E1DC1510050A2A2 /* PBXTargetDependency */,
+				02E114C31E1DEAE60035ED20 /* PBXTargetDependency */,
 			);
 			name = RopaInteligente;
 			productName = RopaInteligente;
@@ -364,8 +364,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 09B1E7ED1E1DC1470050A2A2 /* Products */;
-					ProjectRef = 09B1E7EC1E1DC1470050A2A2 /* Charts.xcodeproj */;
+					ProductGroup = 02E114B51E1DEACF0035ED20 /* Products */;
+					ProjectRef = 02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -378,25 +378,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		09B1E7F31E1DC1470050A2A2 /* Charts.framework */ = {
+		02E114BB1E1DEACF0035ED20 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = 09B1E7F21E1DC1470050A2A2 /* PBXContainerItemProxy */;
+			remoteRef = 02E114BA1E1DEACF0035ED20 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		09B1E7F51E1DC1470050A2A2 /* ChartsRealm.framework */ = {
+		02E114BD1E1DEACF0035ED20 /* ChartsRealm.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ChartsRealm.framework;
-			remoteRef = 09B1E7F41E1DC1470050A2A2 /* PBXContainerItemProxy */;
+			remoteRef = 02E114BC1E1DEACF0035ED20 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		09B1E7F71E1DC1470050A2A2 /* ChartsTests.xctest */ = {
+		02E114BF1E1DEACF0035ED20 /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = 09B1E7F61E1DC1470050A2A2 /* PBXContainerItemProxy */;
+			remoteRef = 02E114BE1E1DEACF0035ED20 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -471,10 +471,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09B1E7FB1E1DC1510050A2A2 /* PBXTargetDependency */ = {
+		02E114C31E1DEAE60035ED20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
-			targetProxy = 09B1E7FA1E1DC1510050A2A2 /* PBXContainerItemProxy */;
+			targetProxy = 02E114C21E1DEAE60035ED20 /* PBXContainerItemProxy */;
 		};
 		09C8CE021E0B42300097D674 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -856,7 +856,38 @@
                     <view key="view" contentMode="scaleToFill" id="6M1-Ul-kg3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humano" translatesAutoresizingMaskIntoConstraints="NO" id="gv4-X8-mS0">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdk-VQ-ohc">
+                                <rect key="frame" x="135" y="440" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="3UG-A5-lcf"/>
+                                    <constraint firstAttribute="height" constant="50" id="8kz-pn-glS"/>
+                                </constraints>
+                                <state key="normal" image="seleccionar_accent"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrK-Jl-Yzt">
+                                <rect key="frame" x="135" y="204" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ony-QB-nrp"/>
+                                    <constraint firstAttribute="width" constant="50" id="hOe-pm-vqW"/>
+                                </constraints>
+                                <state key="normal" image="seleccionar_negro"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hrK-Jl-Yzt" firstAttribute="top" secondItem="fJz-tW-KA6" secondAttribute="bottom" constant="140" id="0dS-nT-HSx"/>
+                            <constraint firstAttribute="trailing" secondItem="gv4-X8-mS0" secondAttribute="trailing" id="IxL-EK-Ogl"/>
+                            <constraint firstItem="Kyd-sw-G1e" firstAttribute="top" secondItem="Wdk-VQ-ohc" secondAttribute="bottom" constant="29" id="N6l-3a-5XD"/>
+                            <constraint firstItem="gv4-X8-mS0" firstAttribute="top" secondItem="fJz-tW-KA6" secondAttribute="bottom" id="Sz0-kw-CGY"/>
+                            <constraint firstItem="Wdk-VQ-ohc" firstAttribute="centerX" secondItem="6M1-Ul-kg3" secondAttribute="centerX" id="a2d-yB-VYW"/>
+                            <constraint firstItem="Kyd-sw-G1e" firstAttribute="top" secondItem="gv4-X8-mS0" secondAttribute="bottom" id="gfM-ze-RNS"/>
+                            <constraint firstItem="hrK-Jl-Yzt" firstAttribute="centerX" secondItem="6M1-Ul-kg3" secondAttribute="centerX" id="iGx-XO-nbT"/>
+                            <constraint firstItem="gv4-X8-mS0" firstAttribute="leading" secondItem="6M1-Ul-kg3" secondAttribute="leading" id="yIk-7v-R1b"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Vibrador" image="vibrador_icon" id="phD-1O-S0f"/>
                 </viewController>
@@ -915,6 +946,7 @@
         <image name="datos_icon" width="22" height="22"/>
         <image name="demo_icon" width="44" height="44"/>
         <image name="grafica_icon" width="22" height="22"/>
+        <image name="humano" width="270" height="360"/>
         <image name="llave_icon" width="44" height="44"/>
         <image name="location_icon" width="44" height="44"/>
         <image name="logoSplash" width="512" height="512"/>
@@ -924,6 +956,8 @@
         <image name="next_icon_negro" width="44" height="44"/>
         <image name="polo_icon" width="44" height="44"/>
         <image name="respiracion_icon" width="44" height="44"/>
+        <image name="seleccionar_accent" width="100" height="100"/>
+        <image name="seleccionar_negro" width="100" height="100"/>
         <image name="side_button" width="44" height="44"/>
         <image name="temperatura_icon" width="44" height="44"/>
         <image name="vibrador_icon" width="22" height="22"/>
