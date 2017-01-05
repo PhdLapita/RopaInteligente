@@ -847,7 +847,6 @@
         <!--Polo Inteligente-->
         <scene sceneID="mgL-c3-lL3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="fKT-yE-1Uv" customClass="GraficaViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mbX-Jz-Ln4"/>
@@ -887,6 +886,7 @@
                         <barButtonItem key="leftBarButtonItem" image="back_button" id="IEr-bv-vY1"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4650" y="-3254.5774647887324"/>
         </scene>
