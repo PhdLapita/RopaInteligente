@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -252,6 +252,9 @@
                             <outlet property="delegate" destination="0ge-ds-Bei" id="wk5-rg-HAg"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tablaDemo" destination="4ZY-hJ-1L6" id="2WH-Ok-zlI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRp-Vs-yUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,6 +304,9 @@
                             <outlet property="delegate" destination="BR0-d4-sYy" id="vHm-VI-BbL"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tablaPolo" destination="woW-K1-XHj" id="Q7P-Vk-ACA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWT-5y-d7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -402,6 +408,9 @@
                             <outlet property="delegate" destination="DQQ-91-kEW" id="ruQ-FU-gb0"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tablaLlavero" destination="T0H-QI-ezM" id="btO-4o-UWg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5W-B5-CZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,7 +420,7 @@
         <scene sceneID="rBj-yg-xke">
             <objects>
                 <collectionViewController storyboardIdentifier="llaveros" id="5eF-FI-LJn" customClass="LlaveroCollectionVC" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="6Di-ek-g9d">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6Di-ek-g9d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

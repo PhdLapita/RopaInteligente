@@ -9,8 +9,15 @@
 import UIKit
 import CoreBluetooth
 class EmparejarTableViewController: UITableViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
+    
+    @IBOutlet var tablaPolo: UITableView!
+    @IBOutlet var tablaDemo: UITableView!
+    @IBOutlet var tablaLlavero: UITableView!
+    
     var centralManager: CBCentralManager!
-    var peripheral: CBPeripheral!
+    var peripherals: Array<CBPeripheral> = Array<CBPeripheral>()
+    
+    
     var fruits = ["Apple", "Apricot", "Banana", "Blueberry", "Cantaloupe", "Cherry",
                   "Clementine", "Coconut", "Cranberry", "Fig", "Grape", "Grapefruit",
                   "Kiwi fruit", "Lemon", "Lime", "Lychee", "Mandarine", "Mango",
@@ -18,15 +25,45 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
                   "Pear", "Pineapple", "Raspberry", "Strawberry"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.startManager()
-    }
-    
-    func startManager(){
+        
+        //Initialise CoreBluetooth Central Manager
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
+   
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        
+        if (central.state == CBManagerState.poweredOn)
+        {
+            self.centralManager?.scanForPeripherals(withServices: nil, options: nil)
+        }
+        else
+        {
+            // do something like alert the user that ble is not on
+        }
+    }
+    
+    func stopScan() {
+        centralManager.stopScan()
+        tableView.reloadData()
+        print("reload table view")
+    }
+    
+    var a = 0
+    
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        if peripherals.count <= 1 {
+            peripherals.append(peripheral)
+        }
+        for i in 0 ..< peripherals.count {
+            if peripherals[i].name != peripheral.name{
+                a = 1
+            }
+        }
+        if a == 1{
+            peripherals.append(peripheral)
+            a = 0
+        }
+        tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,15 +71,23 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count
+        return peripherals.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
-        let fruitName = fruits[indexPath.row]
+        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "LabelCell")! as UITableViewCell
         
-        cell.textLabel?.text = fruitName
-        cell.detailTextLabel?.text = "MAC"
+    
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
+        //let fruitName = fruits[indexPath.row]
+        
+        let peripheral = peripherals[indexPath.row]
+        cell.textLabel?.text = peripheral.name
+        //cell.textLabel?.text = fruitName
+        cell.detailTextLabel?.text = "\(peripheral.identifier)"
+        UserDefaults.standard.setValue(peripheral.name, forKey: "deviceName")
+        UserDefaults.standard.setValue("\(peripheral.identifier)", forKey: "deviceId")
+        
         return cell
     }
     
