@@ -51,19 +51,8 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
     var a = 0
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        if peripherals.count <= 1 {
             peripherals.append(peripheral)
-        }
-        for i in 0 ..< peripherals.count {
-            if peripherals[i].name != peripheral.name{
-                a = 1
-            }
-        }
-        if a == 1{
-            peripherals.append(peripheral)
-            a = 0
-        }
-        tableView.reloadData()
+               tableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,6 +61,10 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return peripherals.count
+    }
+    
+    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        peripheral.discoverServices(nil)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -85,11 +78,10 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
         cell.textLabel?.text = peripheral.name
         //cell.textLabel?.text = fruitName
         cell.detailTextLabel?.text = "\(peripheral.identifier)"
-        UserDefaults.standard.setValue(peripheral.name, forKey: "deviceName")
-        UserDefaults.standard.setValue("\(peripheral.identifier)", forKey: "deviceId")
-        
+
         return cell
     }
+    
     
     func beginApp(){
         let initActivity1 = self.storyboard?.instantiateViewController(withIdentifier: "polo")
@@ -109,6 +101,16 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let peripheral = peripherals[indexPath.row]
+        centralManager.connect(peripheral, options: nil)
+        centralManager.stopScan()
+        print(peripheral.name!)
+        print("\(peripheral.identifier)")
+        //guardando device en memoria
         beginApp()
     }
+    
+    
+    
 }

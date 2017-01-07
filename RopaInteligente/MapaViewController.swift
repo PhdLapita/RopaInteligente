@@ -8,11 +8,14 @@
 
 import UIKit
 import MapKit
-
+import CoreBluetooth
 class MapaViewController: UIViewController {
     
     @IBOutlet weak var btnLocalizar: UIButton!
-    
+
+    @IBAction func clicBack(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

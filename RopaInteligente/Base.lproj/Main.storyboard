@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7r5-fG-wg6">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -539,7 +539,7 @@
         <!--Polo Inteligente-->
         <scene sceneID="t2i-k3-FYy">
             <objects>
-                <viewController id="ufJ-Tc-xqI" sceneMemberID="viewController">
+                <viewController id="ufJ-Tc-xqI" customClass="DatosViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZkX-Bh-JAY"/>
                         <viewControllerLayoutGuide type="bottom" id="UHM-zs-OkR"/>
@@ -776,7 +776,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Polo Inteligente" id="kPc-eP-drJ">
                         <barButtonItem key="backBarButtonItem" title="atras" id="oGe-Lu-cOz"/>
-                        <barButtonItem key="leftBarButtonItem" image="back_button" id="6HB-iT-57z"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="6HB-iT-57z">
+                            <connections>
+                                <action selector="clicBack:" destination="ufJ-Tc-xqI" id="Az4-ZS-4ax"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rd6-nk-yrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -822,7 +826,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Polo Inteligente" id="icm-JN-MZi">
-                        <barButtonItem key="leftBarButtonItem" image="back_button" id="Gun-br-Fs5"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="Gun-br-Fs5">
+                            <connections>
+                                <action selector="clicBack:" destination="3fB-Rk-c1F" id="gP9-rx-R35"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="btnLocalizar" destination="WKU-fb-oUj" id="7tZ-M5-qOg"/>
@@ -892,7 +900,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Polo Inteligente" id="EDO-Qc-w8q">
                         <barButtonItem key="backBarButtonItem" title="atras" id="Xg9-Am-Mb2"/>
-                        <barButtonItem key="leftBarButtonItem" image="back_button" id="IEr-bv-vY1"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="IEr-bv-vY1">
+                            <connections>
+                                <action selector="clicBack:" destination="fKT-yE-1Uv" id="4DW-PL-QsI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -902,7 +914,7 @@
         <!--Polo Inteligente-->
         <scene sceneID="W0f-Yz-87A">
             <objects>
-                <viewController id="Omx-gR-oXP" sceneMemberID="viewController">
+                <viewController id="Omx-gR-oXP" customClass="VibradorViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fJz-tW-KA6"/>
                         <viewControllerLayoutGuide type="bottom" id="Kyd-sw-G1e"/>
@@ -920,7 +932,10 @@
                                     <constraint firstAttribute="width" constant="50" id="3UG-A5-lcf"/>
                                     <constraint firstAttribute="height" constant="50" id="8kz-pn-glS"/>
                                 </constraints>
-                                <state key="normal" image="seleccionar_accent"/>
+                                <state key="normal" image="seleccionar_negro"/>
+                                <connections>
+                                    <action selector="clicVibradorBottom:" destination="Omx-gR-oXP" eventType="touchUpInside" id="6ab-SG-KcE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrK-Jl-Yzt">
                                 <rect key="frame" x="135" y="204" width="50" height="50"/>
@@ -929,6 +944,9 @@
                                     <constraint firstAttribute="width" constant="50" id="hOe-pm-vqW"/>
                                 </constraints>
                                 <state key="normal" image="seleccionar_negro"/>
+                                <connections>
+                                    <action selector="clicVibradorTop:" destination="Omx-gR-oXP" eventType="touchUpInside" id="OoH-gz-PMm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -945,8 +963,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Polo Inteligente" id="FmD-Na-TY2">
                         <barButtonItem key="backBarButtonItem" title="atras" id="jA1-fh-RZU"/>
-                        <barButtonItem key="leftBarButtonItem" image="back_button" id="qCQ-ZK-KFK"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="qCQ-ZK-KFK">
+                            <connections>
+                                <action selector="clicBack:" destination="Omx-gR-oXP" id="5Ih-Oa-aHW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnUp" destination="hrK-Jl-Yzt" id="J4R-JT-uzj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNJ-z0-cbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -955,7 +980,7 @@
         <!--Polo Inteligente-->
         <scene sceneID="6jp-1w-4H9">
             <objects>
-                <viewController id="b7f-ip-pra" sceneMemberID="viewController">
+                <viewController id="b7f-ip-pra" customClass="LucesViewController" customModule="RopaInteligente" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pQ0-Pv-T1X"/>
                         <viewControllerLayoutGuide type="bottom" id="pd7-jJ-3u8"/>
@@ -967,9 +992,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iroman_incoloro" translatesAutoresizingMaskIntoConstraints="NO" id="Ojz-Cw-8Z3">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbS-HL-mD9">
+                                <rect key="frame" x="120" y="244" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="dW7-AZ-LYo"/>
+                                    <constraint firstAttribute="width" constant="80" id="p0Q-3m-sKZ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clicIroman:" destination="b7f-ip-pra" eventType="touchUpInside" id="1gH-Up-dfv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="WbS-HL-mD9" firstAttribute="centerY" secondItem="zdK-FD-89v" secondAttribute="centerY" id="1Fr-32-Pnb"/>
+                            <constraint firstItem="WbS-HL-mD9" firstAttribute="centerX" secondItem="zdK-FD-89v" secondAttribute="centerX" id="1kR-tw-3Ky"/>
                             <constraint firstAttribute="trailing" secondItem="Ojz-Cw-8Z3" secondAttribute="trailing" id="2Us-Ry-awX"/>
                             <constraint firstItem="Ojz-Cw-8Z3" firstAttribute="leading" secondItem="zdK-FD-89v" secondAttribute="leading" id="7tW-Qg-V0w"/>
                             <constraint firstItem="Ojz-Cw-8Z3" firstAttribute="top" secondItem="pQ0-Pv-T1X" secondAttribute="bottom" id="xwh-La-TIp"/>
@@ -978,8 +1015,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Polo Inteligente" id="QvV-Ou-0Zw">
                         <barButtonItem key="backBarButtonItem" title="atras" id="kbd-mF-tI8"/>
-                        <barButtonItem key="leftBarButtonItem" image="back_button" id="MZY-MH-fOq"/>
+                        <barButtonItem key="leftBarButtonItem" image="back_button" id="MZY-MH-fOq">
+                            <connections>
+                                <action selector="clicBack:" destination="b7f-ip-pra" id="hdh-LV-mvW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imgIroman" destination="Ojz-Cw-8Z3" id="aRt-0y-uOd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taN-7S-rIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1017,6 +1061,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jwz-ir-976">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1036,6 +1085,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PDQ-pQ-PoQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1055,6 +1109,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dgs-5j-zpU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1074,6 +1133,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WBf-4q-vPF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1093,6 +1157,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TP9-iB-LLB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1125,7 +1194,6 @@
         <image name="next_icon_negro" width="44" height="44"/>
         <image name="polo_icon" width="44" height="44"/>
         <image name="respiracion_icon" width="44" height="44"/>
-        <image name="seleccionar_accent" width="100" height="100"/>
         <image name="seleccionar_negro" width="100" height="100"/>
         <image name="side_button" width="44" height="44"/>
         <image name="temperatura_icon" width="44" height="44"/>

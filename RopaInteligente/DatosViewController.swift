@@ -10,6 +10,9 @@ import UIKit
 
 class DatosViewController: UIViewController {
 
+    @IBAction func clicBack(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
