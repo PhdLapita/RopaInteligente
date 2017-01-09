@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023103631E23319C004BF332 /* BTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023103621E23319C004BF332 /* BTManager.swift */; };
 		02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */; };
 		02E114C01E1DEAE60035ED20 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E114BB1E1DEACF0035ED20 /* Charts.framework */; };
 		02E114C11E1DEAE60035ED20 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E114BB1E1DEACF0035ED20 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02E45F471E21FACC00E8E240 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E45F461E21FACC00E8E240 /* BTDiscovery.swift */; };
+		02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E45F4A1E21FAE600E8E240 /* BTService.swift */; };
 		091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */; };
 		091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */; };
 		091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E01E1C1B8A00EB641D /* DatosViewController.swift */; };
@@ -33,7 +36,6 @@
 		09C8CE101E0B42300097D674 /* RopaInteligenteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */; };
 		09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */; };
 		09F199A71E1EB4B700C1EEE6 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A61E1EB4B700C1EEE6 /* IconCell.swift */; };
-		09F199A91E1EDED800C1EEE6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A81E1EDED800C1EEE6 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +98,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		023103621E23319C004BF332 /* BTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTManager.swift; sourceTree = "<group>"; };
 		02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ubicacion.swift; sourceTree = "<group>"; };
 		02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		02E45F461E21FACC00E8E240 /* BTDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDiscovery.swift; sourceTree = "<group>"; };
+		02E45F4A1E21FAE600E8E240 /* BTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTService.swift; sourceTree = "<group>"; };
 		091C20D81E1C005400EB641D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmparejarTableViewController.swift; sourceTree = "<group>"; };
 		091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +132,6 @@
 		09C8CE111E0B42300097D674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveroCollectionVC.swift; sourceTree = "<group>"; };
 		09F199A61E1EB4B700C1EEE6 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
-		09F199A81E1EDED800C1EEE6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,16 @@
 				02E114BF1E1DEACF0035ED20 /* ChartsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		02E45F4C1E21FAEE00E8E240 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				02E45F461E21FACC00E8E240 /* BTDiscovery.swift */,
+				02E45F4A1E21FAE600E8E240 /* BTService.swift */,
+				023103621E23319C004BF332 /* BTManager.swift */,
+			);
+			name = BLE;
 			sourceTree = "<group>";
 		};
 		091C20D71E1C005400EB641D /* Frameworks */ = {
@@ -238,6 +252,7 @@
 				09C8CDEC1E0B42300097D674 /* AppDelegate.swift */,
 				091C20E01E1C1B8A00EB641D /* DatosViewController.swift */,
 				09C8CDEE1E0B42300097D674 /* ViewController.swift */,
+				02E45F4C1E21FAEE00E8E240 /* BLE */,
 				091C20EA1E1C1C2E00EB641D /* LlaveroGroup */,
 				091C20E91E1C1C1200EB641D /* PoloDemo */,
 				091C20E81E1C1BCF00EB641D /* PoloInteligente */,
@@ -247,7 +262,6 @@
 				09C8CDFB1E0B42300097D674 /* Info.plist */,
 				09C8CDF31E0B42300097D674 /* RopaInteligente.xcdatamodeld */,
 				02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */,
-				09F199A81E1EDED800C1EEE6 /* File.swift */,
 			);
 			path = RopaInteligente;
 			sourceTree = "<group>";
@@ -446,15 +460,17 @@
 				09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */,
 				09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */,
 				091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */,
-				09F199A91E1EDED800C1EEE6 /* File.swift in Sources */,
 				091C20E71E1C1BC100EB641D /* LucesViewController.swift in Sources */,
 				02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */,
+				02E45F471E21FACC00E8E240 /* BTDiscovery.swift in Sources */,
 				091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */,
+				023103631E23319C004BF332 /* BTManager.swift in Sources */,
 				09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */,
 				091C20E31E1C1B9A00EB641D /* GraficaViewController.swift in Sources */,
 				091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */,
 				091C20F11E1C1CA700EB641D /* MapaDemoVC.swift in Sources */,
 				091C20F31E1C1CFC00EB641D /* DatosDemoVC.swift in Sources */,
+				02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */,
 				09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */,
 				091C20E51E1C1BB500EB641D /* VibradorViewController.swift in Sources */,
 			);
