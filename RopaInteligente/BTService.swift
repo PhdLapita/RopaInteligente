@@ -44,10 +44,11 @@ class BTService: NSObject, CBPeripheralDelegate {
     
     // Mark: - CBPeripheralDelegate
     
+    
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         let uuidsForBTService: [CBUUID] = [characterRx]
         
-        if (peripheral != self.peripheral) {
+      /*  if (peripheral != self.peripheral) {
             // Wrong Peripheral
             return
         }
@@ -59,7 +60,7 @@ class BTService: NSObject, CBPeripheralDelegate {
         if ((peripheral.services == nil) || (peripheral.services!.count == 0)) {
             // No Services
             return
-        }
+        }*/
         
         for service in peripheral.services! {
             print(service)
@@ -73,14 +74,14 @@ class BTService: NSObject, CBPeripheralDelegate {
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
-        if (peripheral != self.peripheral) {
+       /* if (peripheral != self.peripheral) {
             // Wrong Peripheral
             return
         }
         
         if (error != nil) {
             return
-        }
+        }*/
         print("OMO 4")
 
         if let characteristics = service.characteristics {

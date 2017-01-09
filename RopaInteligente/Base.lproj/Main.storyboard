@@ -85,7 +85,7 @@
                                         </state>
                                         <connections>
                                             <action selector="clicPoloInteligente:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQK-Tj-L1x"/>
-                                            <segue destination="BR0-d4-sYy" kind="show" id="bYK-J2-8Sd"/>
+                                            <segue destination="puR-ae-gcZ" kind="show" id="bYK-J2-8Sd"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Pss-1w-MOM">
@@ -304,13 +304,25 @@
                             <outlet property="delegate" destination="BR0-d4-sYy" id="vHm-VI-BbL"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="2ri-Yb-cb8">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Yau-10-Xxt">
+                            <connections>
+                                <action selector="clicBack:" destination="BR0-d4-sYy" id="Dmx-li-izt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="5hK-vd-VDu">
+                            <connections>
+                                <action selector="clicRefresh:" destination="BR0-d4-sYy" id="lm3-z3-6ef"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tablaPolo" destination="woW-K1-XHj" id="Q7P-Vk-ACA"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWT-5y-d7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-3099"/>
+            <point key="canvasLocation" x="1841.25" y="-3099.2957746478874"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="zjY-Ez-sWU">
@@ -859,7 +871,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvY-f2-lzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2689" y="-3099"/>
+            <point key="canvasLocation" x="3686.25" y="-3099.2957746478874"/>
         </scene>
         <!--Polo Inteligente-->
         <scene sceneID="mgL-c3-lL3">
@@ -909,7 +921,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6z-1K-1zC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4650" y="-3254.5774647887324"/>
+            <point key="canvasLocation" x="5647.5" y="-3254.5774647887324"/>
         </scene>
         <!--Polo Inteligente-->
         <scene sceneID="W0f-Yz-87A">
@@ -975,7 +987,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNJ-z0-cbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4646.25" y="-2582.7464788732395"/>
+            <point key="canvasLocation" x="5643.75" y="-2582.7464788732395"/>
         </scene>
         <!--Polo Inteligente-->
         <scene sceneID="6jp-1w-4H9">
@@ -1122,7 +1134,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oLs-nz-NXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652.5" y="-3254.5774647887324"/>
+            <point key="canvasLocation" x="4650" y="-3254.5774647887324"/>
         </scene>
         <!--Vibrador-->
         <scene sceneID="Qbj-Rc-chc">
@@ -1146,7 +1158,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3w-9O-xDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3648.75" y="-2582.7464788732395"/>
+            <point key="canvasLocation" x="4646.25" y="-2582.7464788732395"/>
         </scene>
         <!--Luces-->
         <scene sceneID="LI7-f6-Xda">
@@ -1171,6 +1183,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRi-5g-6Tw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3650.625" y="-1871.8309859154929"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d8b-Vu-HAD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="puR-ae-gcZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TNq-Sn-xOt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BR0-d4-sYy" kind="relationship" relationship="rootViewController" id="8la-wG-KrZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0y-BQ-IuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843.75" y="-3099.2957746478874"/>
         </scene>
     </scenes>
     <resources>

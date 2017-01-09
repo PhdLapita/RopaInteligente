@@ -12,9 +12,11 @@ import CoreBluetooth
 
 
 class LucesViewController: UIViewController, CBPeripheralDelegate  {
+    let bluetoothManager = BTManager.sharedInstance
+
    // var peripheral: CBPeripheral?
    // var btService: BTService?
-    var instanciaxD = EmparejarTableViewController.emparejar
+    //var instanciaxD = EmparejarTableViewController.emparejar
     
     @IBOutlet weak var imgIroman: UIImageView!
     
@@ -22,7 +24,8 @@ class LucesViewController: UIViewController, CBPeripheralDelegate  {
         super.viewDidLoad()
      //   peripheral = UserDefaults.standard.object(forKey: "dispo") as? CBPeripheral
       //  btService = BTService(initWithPeripheral: peripheral!)
-        
+        //bluetoothManager.conectarDevice(periferal: periferico!)
+        bluetoothManager.startDiscoveringServices()
     }
     
     
@@ -36,7 +39,8 @@ class LucesViewController: UIViewController, CBPeripheralDelegate  {
             imgIroman.image = #imageLiteral(resourceName: "iroman_color")
             a = 1
           //  btService?.writePosition("a")
-            instanciaxD.bleService?.writePosition("a")
+            //instanciaxD.bleService?.writePosition("a")
+            bluetoothManager.writePosition("a")
                 print("OMO 6")
             
         }else{

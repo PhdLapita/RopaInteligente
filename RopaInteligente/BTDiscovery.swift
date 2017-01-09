@@ -77,7 +77,6 @@ class BTDiscovery: NSObject, CBCentralManagerDelegate  {
             self.bleService = nil;
             self.peripheralBLE = nil;
         }
-        
         // Start scanning for new devices
         self.startScanning()
     }

@@ -34,6 +34,7 @@
 		09C8CDFA1E0B42300097D674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF81E0B42300097D674 /* LaunchScreen.storyboard */; };
 		09C8CE051E0B42300097D674 /* RopaInteligenteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE041E0B42300097D674 /* RopaInteligenteTests.swift */; };
 		09C8CE101E0B42300097D674 /* RopaInteligenteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */; };
+		09EDCB061E23F8F000EB870E /* BTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDCB051E23F8F000EB870E /* BTDelegate.swift */; };
 		09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */; };
 		09F199A71E1EB4B700C1EEE6 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A61E1EB4B700C1EEE6 /* IconCell.swift */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,7 @@
 		09C8CE0B1E0B42300097D674 /* RopaInteligenteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RopaInteligenteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CE0F1E0B42300097D674 /* RopaInteligenteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RopaInteligenteUITests.swift; sourceTree = "<group>"; };
 		09C8CE111E0B42300097D674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09EDCB051E23F8F000EB870E /* BTDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTDelegate.swift; sourceTree = "<group>"; };
 		09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveroCollectionVC.swift; sourceTree = "<group>"; };
 		09F199A61E1EB4B700C1EEE6 /* IconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +180,7 @@
 				02E45F461E21FACC00E8E240 /* BTDiscovery.swift */,
 				02E45F4A1E21FAE600E8E240 /* BTService.swift */,
 				023103621E23319C004BF332 /* BTManager.swift */,
+				09EDCB051E23F8F000EB870E /* BTDelegate.swift */,
 			);
 			name = BLE;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 		091C20E81E1C1BCF00EB641D /* PoloInteligente */ = {
 			isa = PBXGroup;
 			children = (
+				091C20E01E1C1B8A00EB641D /* DatosViewController.swift */,
 				091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */,
 				091C20E21E1C1B9A00EB641D /* GraficaViewController.swift */,
 				091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */,
@@ -250,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				09C8CDEC1E0B42300097D674 /* AppDelegate.swift */,
-				091C20E01E1C1B8A00EB641D /* DatosViewController.swift */,
 				09C8CDEE1E0B42300097D674 /* ViewController.swift */,
 				02E45F4C1E21FAEE00E8E240 /* BLE */,
 				091C20EA1E1C1C2E00EB641D /* LlaveroGroup */,
@@ -469,6 +472,7 @@
 				091C20E31E1C1B9A00EB641D /* GraficaViewController.swift in Sources */,
 				091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */,
 				091C20F11E1C1CA700EB641D /* MapaDemoVC.swift in Sources */,
+				09EDCB061E23F8F000EB870E /* BTDelegate.swift in Sources */,
 				091C20F31E1C1CFC00EB641D /* DatosDemoVC.swift in Sources */,
 				02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */,
 				09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */,

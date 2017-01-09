@@ -9,95 +9,28 @@
 import UIKit
 import CoreBluetooth
 
-class EmparejarTableViewController: UITableViewController, CBCentralManagerDelegate {
-    static let emparejar = EmparejarTableViewController()
+class EmparejarTableViewController: UITableViewController {
 
     @IBOutlet var tablaPolo: UITableView!
     @IBOutlet var tablaDemo: UITableView!
     @IBOutlet var tablaLlavero: UITableView!
-    var peripheralBLE: CBPeripheral?
-
-    var centralManager: CBCentralManager!
-    var peripherals: Array<CBPeripheral> = Array<CBPeripheral>()
+    let bluetoothManager = BTManager.getInstance()
+    var lista: Array<CBPeripheral> = Array<CBPeripheral>()
     
-    
+    @IBAction func clicBack(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
+    @IBAction func clicRefresh(_ sender: UIBarButtonItem) {
+        lista = bluetoothManager.getLista()
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //Initialise CoreBluetooth Central Manager
-        centralManager = CBCentralManager(delegate: self, queue: nil)
-    }
-   
-    
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        switch (central.state) {
-        case .poweredOff:
-            self.clearDevices()
-            
-        case .unauthorized:
-            // Indicate to user that the iOS device does not support BLE.
-            break
-            
-        case .unknown:
-            // Wait for another event
-            break
-            
-        case .poweredOn:
-            self.startScanning()
-            
-        case .resetting:
-            self.clearDevices()
-            
-        case .unsupported:
-            break
-        }
-    }
-
-    var bleService: BTService? {
-        didSet {
-            print("OMO 8")
-            if let service = self.bleService {
-                service.startDiscoveringServices()
-                print("OMO 9")
-            }
-        }
-    }
-
-    func clearDevices() {
-        self.bleService = nil
-        //self.peripheralBLE = nil
-    }
-    
-    func startScanning() {
-        if let central = centralManager {
-            central.scanForPeripherals(withServices: [BLEServiceUUID], options: nil)
-        }
-    }
-
-    func stopScan() {
-        centralManager.stopScan()
+        lista = bluetoothManager.getLista()
         tableView.reloadData()
-        print("reload table view")
     }
-    
-    
-    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-            peripherals.append(peripheral)
-               tableView.reloadData()
-    }
-    
-    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
-        peripheral.discoverServices(nil)
-        // Create new service class
-        if (peripheral == self.peripheralBLE) {
-            self.bleService = BTService(initWithPeripheral: peripheral)
-        }
-        //UserDefaults.standard.set(peripheral, forKey: "dispo")
 
-        print(peripheral.name!)
-        print("\(peripheral.identifier)")
-
-    }
+    /////////////////////////////////////BTDelegate Implementation u.u//////////////////////////////
 
     /////////////////////////////////////TABLE VIEW////////////////////////////////////////////////
     
@@ -106,7 +39,7 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return peripherals.count
+         return lista.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -116,7 +49,7 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
         //let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
         //let fruitName = fruits[indexPath.row]
         
-        let peripheral = peripherals[indexPath.row]
+        let peripheral = lista[indexPath.row]
         cell.textLabel?.text = peripheral.name
         //cell.textLabel?.text = fruitName
         cell.detailTextLabel?.text = "\(peripheral.identifier)"
@@ -126,9 +59,9 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let peripheral = peripherals[indexPath.row]
-      
-        // Retain the peripheral before trying to connect
+        let peripheral = lista[indexPath.row]
+      bluetoothManager.conectarDevice(periferal: peripheral)
+     /*  // Retain the peripheral before trying to connect
         self.peripheralBLE = peripheral
         
         // Reset service
@@ -136,7 +69,7 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
         centralManager.connect(peripheral, options: nil)
         centralManager.stopScan()
         print(peripheral.name!)
-        print("\(peripheral.identifier)")
+        print("\(peripheral.identifier)")*/
         //guardando device en memoria
         beginApp()
     }
@@ -158,7 +91,5 @@ class EmparejarTableViewController: UITableViewController, CBCentralManagerDeleg
             break
             }
     }
-    
-    
-    
 }
+ 
