@@ -9,29 +9,26 @@
 import UIKit
 import CoreBluetooth
 
-class EmparejarTableViewController: UITableViewController {
+class EmparejarTableViewController: UITableViewController,BTDelegate {
 
-    @IBOutlet var tablaPolo: UITableView!
-    @IBOutlet var tablaDemo: UITableView!
-    @IBOutlet var tablaLlavero: UITableView!
     let bluetoothManager = BTManager.getInstance()
     var lista: Array<CBPeripheral> = Array<CBPeripheral>()
     
-    @IBAction func clicBack(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true)
-    }
-    @IBAction func clicRefresh(_ sender: UIBarButtonItem) {
-        lista = bluetoothManager.getLista()
-        tableView.reloadData()
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        lista = bluetoothManager.getLista()
-        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        bluetoothManager.delegate = self
     }
 
     /////////////////////////////////////BTDelegate Implementation u.u//////////////////////////////
-
+    func encontreUnDevicexD(_ lista: Array<CBPeripheral>){
+        self.lista = lista
+        tableView.reloadData()
+    }
+    
     /////////////////////////////////////TABLE VIEW////////////////////////////////////////////////
     
     override func numberOfSections(in tableView: UITableView) -> Int {

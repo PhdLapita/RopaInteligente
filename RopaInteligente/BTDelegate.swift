@@ -10,5 +10,5 @@ import CoreBluetooth
 
 protocol BTDelegate {
     
-   func encontreUnDevicexD(_ lista: String)
+   func encontreUnDevicexD(_ lista: Array<CBPeripheral>)
 }

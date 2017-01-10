@@ -16,7 +16,6 @@ let BLEServiceChangedStatusNotification = "kBLEServiceChangedStatusNotification"
 //let btDiscoverySharedInstance = BTManager();
 class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     var delegate : BTDelegate?
-    static let sharedInstance = BTManager()
     var periferico: CBPeripheral?
     var positionCharacteristic: CBCharacteristic?
     var centralManager: CBCentralManager?
@@ -29,6 +28,8 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     static private var instance : BTManager {
         return sharedInstance
     }
+    private static let sharedInstance = BTManager()
+
     /**
      Singleton pattern method
      
@@ -42,6 +43,8 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     override init() {
         super.init()
         //let centralQueue = DispatchQueue(label: "com.raywenderlich", attributes: [])
+        //var dic : [String : AnyObject] = Dictionary()
+        //dic[CBCentralManagerOptionShowPowerAlertKey] = false as AnyObject?
         centralManager = CBCentralManager(delegate: self, queue: nil)
         print("Viendo si hay bluetooth :P")
     }
@@ -83,16 +86,18 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     }
     
     func conectarDevice(periferal: CBPeripheral) {
-        centralManager?.connect(periferal, options: nil)
+        centralManager?.connect(periferal, options: [CBConnectPeripheralOptionNotifyOnDisconnectionKey : true])
     }
 
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         ListaPerifericos.append(peripheral)
+        delegate?.encontreUnDevicexD(ListaPerifericos)
         print(ListaPerifericos)
         print("encontre un periferico u.u")
     }
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         periferico = peripheral
+        peripheral.delegate = self
         centralManager?.stopScan()
         startDiscoveringServices()
     }
@@ -164,6 +169,11 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             }
         }
     }
+    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+           // let value = characteristic.value
+         //  let data = valu
+    }
+    
     func writePosition(_ position: String) {
         if let positionCharacteristic = self.positionCharacteristic {
             print("OMO 7")
@@ -172,6 +182,11 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             periferico?.writeValue(position.data(using:String.Encoding.utf8, allowLossyConversion: true)!, for: positionCharacteristic, type: CBCharacteristicWriteType.withResponse)
         }
     }
+    
+    func readDataFromDevice(){
+        periferico?.readValue(for: <#T##CBCharacteristic#>)
+    }
+    
     func sendBTServiceNotificationWithIsBluetoothConnected(_ isBluetoothConnected: Bool) {
         let connectionDetails = ["isConnected": isBluetoothConnected]
         NotificationCenter.default.post(name: Notification.Name(rawValue: BLEServiceChangedStatusNotification), object: self, userInfo: connectionDetails)

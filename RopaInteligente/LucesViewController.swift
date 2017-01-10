@@ -11,9 +11,8 @@ import CoreBluetooth
 
 
 
-class LucesViewController: UIViewController, CBPeripheralDelegate  {
-    let bluetoothManager = BTManager.sharedInstance
-
+class LucesViewController: UIViewController, CBPeripheralDelegate{
+    let bluetoothManager = BTManager.getInstance()
    // var peripheral: CBPeripheral?
    // var btService: BTService?
     //var instanciaxD = EmparejarTableViewController.emparejar
@@ -22,12 +21,15 @@ class LucesViewController: UIViewController, CBPeripheralDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   peripheral = UserDefaults.standard.object(forKey: "dispo") as? CBPeripheral
+        //   peripheral = UserDefaults.standard.object(forKey: "dispo") as? CBPeripheral
       //  btService = BTService(initWithPeripheral: peripheral!)
         //bluetoothManager.conectarDevice(periferal: periferico!)
-        bluetoothManager.startDiscoveringServices()
+        //bluetoothManager.startDiscoveringServices()
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
     
     var a : Int = 0
     @IBAction func clicBack(_ sender: UIBarButtonItem) {
