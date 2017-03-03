@@ -21,6 +21,8 @@ class EmparejarTableViewController: UITableViewController,BTDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         bluetoothManager.delegate = self
+        bluetoothManager.ListaPerifericos.removeAll()
+        bluetoothManager.startScanning()
     }
 
     /////////////////////////////////////BTDelegate Implementation u.u//////////////////////////////
@@ -73,15 +75,15 @@ class EmparejarTableViewController: UITableViewController,BTDelegate {
     ////////////////////////////////Ir hacia otro Activity//////////////////////////////////////
 
     func beginApp(){
-        let initActivity1 = self.storyboard?.instantiateViewController(withIdentifier: "polo")
-        let initActivity2 = self.storyboard?.instantiateViewController(withIdentifier: "demo")
-        let initActivity3 = self.storyboard?.instantiateViewController(withIdentifier: "llaveros")
+        //let initActivity1 = self.storyboard?.instantiateViewController(withIdentifier: "polo")
+        //let initActivity2 = self.storyboard?.instantiateViewController(withIdentifier: "demo")
+        let initActivity3 = self.storyboard?.instantiateViewController(withIdentifier: "llavero2")
         let seleccionado : String = UserDefaults.standard.string(forKey: "omo")!
         switch seleccionado {
-        case "1":
+        /*case "1":
             self.present(initActivity1!, animated: true, completion: nil)
         case "2":
-            self.present(initActivity2!, animated: true, completion: nil)
+            self.present(initActivity2!, animated: true, completion: nil)*/
         case "3":
             self.present(initActivity3!, animated: true, completion: nil)
         default :

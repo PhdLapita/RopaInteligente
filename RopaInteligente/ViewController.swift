@@ -46,14 +46,14 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func clicPoloInteligente(_ sender: UIButton) {
+    /*@IBAction func clicPoloInteligente(_ sender: UIButton) {
         UserDefaults.standard.setValue("1", forKey: "omo")
-    }
+    }*/
     
-    @IBAction func clicPoloDemo(_ sender: UIButton) {
+   /* @IBAction func clicPoloDemo(_ sender: UIButton) {
         UserDefaults.standard.setValue("2", forKey: "omo")
 
-    }
+    }*/
     
     @IBAction func clicLlavero(_ sender: UIButton) {
         UserDefaults.standard.setValue("3", forKey: "omo")

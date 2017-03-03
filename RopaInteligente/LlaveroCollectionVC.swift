@@ -9,7 +9,8 @@
 import UIKit
 
 class LlaveroCollectionVC: UICollectionViewController {
-    
+    let bluetoothManager = BTManager.getInstance()
+
     var iconList : [[String : String]] = [[String : String ]]()
     
     var icons : Array<String> = Array<String>()
@@ -25,6 +26,9 @@ class LlaveroCollectionVC: UICollectionViewController {
         return iconList.count
     }
     
+    @IBAction func clicBack(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true)
+    }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "IconCell", for: indexPath)
@@ -38,6 +42,10 @@ class LlaveroCollectionVC: UICollectionViewController {
             }
         }
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        bluetoothManager.writePosition("a")
     }
     
 }

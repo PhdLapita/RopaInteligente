@@ -9,8 +9,6 @@
 import UIKit
 import CoreBluetooth
 
-
-
 class LucesViewController: UIViewController, CBPeripheralDelegate{
     let bluetoothManager = BTManager.getInstance()
    // var peripheral: CBPeripheral?

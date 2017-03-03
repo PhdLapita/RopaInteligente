@@ -26,6 +26,7 @@
 		091C20F91E1C1D5500EB641D /* LucesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */; };
 		0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
 		0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
+		094D936B1E366AF300758E8E /* LlaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D936A1E366AF300758E8E /* LlaveViewController.swift */; };
 		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
 		09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEE1E0B42300097D674 /* ViewController.swift */; };
 		09C8CDF21E0B42300097D674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF01E0B42300097D674 /* Main.storyboard */; };
@@ -117,6 +118,7 @@
 		091C20F41E1C1D1100EB641D /* GraficaDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficaDemoVC.swift; sourceTree = "<group>"; };
 		091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorDemoVC.swift; sourceTree = "<group>"; };
 		091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesDemoVC.swift; sourceTree = "<group>"; };
+		094D936A1E366AF300758E8E /* LlaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveViewController.swift; sourceTree = "<group>"; };
 		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C8CDEE1E0B42300097D674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			children = (
 				09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */,
 				09F199A61E1EB4B700C1EEE6 /* IconCell.swift */,
+				094D936A1E366AF300758E8E /* LlaveViewController.swift */,
 			);
 			name = LlaveroGroup;
 			sourceTree = "<group>";
@@ -357,7 +360,7 @@
 				TargetAttributes = {
 					09C8CDE81E0B422F0097D674 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 69EVUZX83W;
+						DevelopmentTeam = MSY85QY2GC;
 						ProvisioningStyle = Automatic;
 					};
 					09C8CDFF1E0B42300097D674 = {
@@ -465,6 +468,7 @@
 				091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */,
 				091C20E71E1C1BC100EB641D /* LucesViewController.swift in Sources */,
 				02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */,
+				094D936B1E366AF300758E8E /* LlaveViewController.swift in Sources */,
 				02E45F471E21FACC00E8E240 /* BTDiscovery.swift in Sources */,
 				091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */,
 				023103631E23319C004BF332 /* BTManager.swift in Sources */,
@@ -632,7 +636,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69EVUZX83W;
+				DEVELOPMENT_TEAM = MSY85QY2GC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/realm-swift-2.1.2/ios/swift-3.0.2",
@@ -640,7 +644,7 @@
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.smartclothes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.llavero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -651,7 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 69EVUZX83W;
+				DEVELOPMENT_TEAM = MSY85QY2GC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/realm-swift-2.1.2/ios/swift-3.0.2",
@@ -659,7 +663,7 @@
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.smartclothes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.llavero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -48,12 +48,16 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         centralManager = CBCentralManager(delegate: self, queue: nil)
         print("Viendo si hay bluetooth :P")
     }
-
+    
+    func desconectando()  {
+        centralManager?.cancelPeripheralConnection(periferico!)
+    }
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch (central.state) {
         case .poweredOff:
-            self.clearDevices()
+            print("State : Powered Off")
+            //self.clearDevices()
             
         case .unauthorized:
             // Indicate to user that the iOS device does not support BLE.
@@ -67,7 +71,8 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             self.startScanning()
             
         case .resetting:
-            self.clearDevices()
+            print("State : reseteando ando")
+            //self.clearDevices()
             
         case .unsupported:
             break
@@ -183,9 +188,9 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         }
     }
     
-    func readDataFromDevice(){
+  /*  func readDataFromDevice(){
         periferico?.readValue(for: <#T##CBCharacteristic#>)
-    }
+    }*/
     
     func sendBTServiceNotificationWithIsBluetoothConnected(_ isBluetoothConnected: Bool) {
         let connectionDetails = ["isConnected": isBluetoothConnected]
