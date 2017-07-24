@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         
         statusBar.backgroundColor = color
     }
+    @IBAction func clicRopa(_ sender: UIButton) {
+        UserDefaults.standard.setValue("2", forKey: "omo")//le asigno un valor  a omo si es que se presiona el boton llavero 1 para ropa inteligente y 2 para ropa inteligente sin conexion
+    }
 
     @IBAction func clicVerMas(_ sender: UIButton) {
         UIApplication.shared.openURL(NSURL(string: "http://www.bearcreekmining.com/s/Home.asp")! as URL)
@@ -50,13 +53,8 @@ class ViewController: UIViewController {
         UserDefaults.standard.setValue("1", forKey: "omo")
     }*/
     
-   /* @IBAction func clicPoloDemo(_ sender: UIButton) {
-        UserDefaults.standard.setValue("2", forKey: "omo")
-
-    }*/
-    
-    @IBAction func clicLlavero(_ sender: UIButton) {
-        UserDefaults.standard.setValue("3", forKey: "omo")
+     @IBAction func clicLlavero(_ sender: UIButton) {
+        UserDefaults.standard.setValue("3", forKey: "omo")//le asigno un valor  a omo si es que se presiona el boton llavero 1 para ropa inteligente y 2 para ropa inteligente sin conexion
     }
     
     

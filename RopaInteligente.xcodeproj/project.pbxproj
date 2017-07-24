@@ -9,23 +9,17 @@
 /* Begin PBXBuildFile section */
 		023103631E23319C004BF332 /* BTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023103621E23319C004BF332 /* BTManager.swift */; };
 		02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02713C4E1E1CAED400CD5EC8 /* Ubicacion.swift */; };
-		02E114C01E1DEAE60035ED20 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E114BB1E1DEACF0035ED20 /* Charts.framework */; };
-		02E114C11E1DEAE60035ED20 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02E114BB1E1DEACF0035ED20 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		02E45F471E21FACC00E8E240 /* BTDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E45F461E21FACC00E8E240 /* BTDiscovery.swift */; };
 		02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E45F4A1E21FAE600E8E240 /* BTService.swift */; };
 		091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */; };
 		091C20DF1E1C1B7B00EB641D /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */; };
 		091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E01E1C1B8A00EB641D /* DatosViewController.swift */; };
-		091C20E31E1C1B9A00EB641D /* GraficaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E21E1C1B9A00EB641D /* GraficaViewController.swift */; };
 		091C20E51E1C1BB500EB641D /* VibradorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E41E1C1BB500EB641D /* VibradorViewController.swift */; };
 		091C20E71E1C1BC100EB641D /* LucesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E61E1C1BC100EB641D /* LucesViewController.swift */; };
-		091C20F11E1C1CA700EB641D /* MapaDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F01E1C1CA700EB641D /* MapaDemoVC.swift */; };
-		091C20F31E1C1CFC00EB641D /* DatosDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F21E1C1CFC00EB641D /* DatosDemoVC.swift */; };
-		091C20F51E1C1D1100EB641D /* GraficaDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F41E1C1D1100EB641D /* GraficaDemoVC.swift */; };
-		091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */; };
-		091C20F91E1C1D5500EB641D /* LucesDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */; };
-		0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */; };
-		0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
+		091C20F11E1C1CA700EB641D /* MapaSinConexionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F01E1C1CA700EB641D /* MapaSinConexionVC.swift */; };
+		091C20F31E1C1CFC00EB641D /* DatosSinConexionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F21E1C1CFC00EB641D /* DatosSinConexionVC.swift */; };
+		091C20F71E1C1D3600EB641D /* VibradorSinConexionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F61E1C1D3600EB641D /* VibradorSinConexionVC.swift */; };
+		091C20F91E1C1D5500EB641D /* LucesSinConexionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20F81E1C1D5500EB641D /* LucesSinConexionVC.swift */; };
 		094D936B1E366AF300758E8E /* LlaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D936A1E366AF300758E8E /* LlaveViewController.swift */; };
 		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
 		09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEE1E0B42300097D674 /* ViewController.swift */; };
@@ -38,6 +32,7 @@
 		09EDCB061E23F8F000EB870E /* BTDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDCB051E23F8F000EB870E /* BTDelegate.swift */; };
 		09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */; };
 		09F199A71E1EB4B700C1EEE6 /* IconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F199A61E1EB4B700C1EEE6 /* IconCell.swift */; };
+		09F51F311F1FC8E10051C531 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091C20D81E1C005400EB641D /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,13 +57,6 @@
 			remoteGlobalIDString = 06165F2E1D8110E600722320;
 			remoteInfo = ChartsTests;
 		};
-		02E114C21E1DEAE60035ED20 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 02E114B41E1DEACF0035ED20 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
-		};
 		09C8CE011E0B42300097D674 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09C8CDE11E0B422F0097D674 /* Project object */;
@@ -85,20 +73,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0928E4261E1DAEDA001500A8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				02E114C11E1DEAE60035ED20 /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		023103621E23319C004BF332 /* BTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTManager.swift; sourceTree = "<group>"; };
 		02713C4C1E1CAB3E00CD5EC8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -110,14 +84,12 @@
 		091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmparejarTableViewController.swift; sourceTree = "<group>"; };
 		091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		091C20E01E1C1B8A00EB641D /* DatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosViewController.swift; sourceTree = "<group>"; };
-		091C20E21E1C1B9A00EB641D /* GraficaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficaViewController.swift; sourceTree = "<group>"; };
 		091C20E41E1C1BB500EB641D /* VibradorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorViewController.swift; sourceTree = "<group>"; };
 		091C20E61E1C1BC100EB641D /* LucesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesViewController.swift; sourceTree = "<group>"; };
-		091C20F01E1C1CA700EB641D /* MapaDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaDemoVC.swift; sourceTree = "<group>"; };
-		091C20F21E1C1CFC00EB641D /* DatosDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosDemoVC.swift; sourceTree = "<group>"; };
-		091C20F41E1C1D1100EB641D /* GraficaDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraficaDemoVC.swift; sourceTree = "<group>"; };
-		091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorDemoVC.swift; sourceTree = "<group>"; };
-		091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesDemoVC.swift; sourceTree = "<group>"; };
+		091C20F01E1C1CA700EB641D /* MapaSinConexionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaSinConexionVC.swift; sourceTree = "<group>"; };
+		091C20F21E1C1CFC00EB641D /* DatosSinConexionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosSinConexionVC.swift; sourceTree = "<group>"; };
+		091C20F61E1C1D3600EB641D /* VibradorSinConexionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibradorSinConexionVC.swift; sourceTree = "<group>"; };
+		091C20F81E1C1D5500EB641D /* LucesSinConexionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LucesSinConexionVC.swift; sourceTree = "<group>"; };
 		094D936A1E366AF300758E8E /* LlaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveViewController.swift; sourceTree = "<group>"; };
 		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,9 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02E114C01E1DEAE60035ED20 /* Charts.framework in Frameworks */,
-				0928E47E1E1DB84C001500A8 /* CoreBluetooth.framework in Frameworks */,
-				0928E47D1E1DB841001500A8 /* MapKit.framework in Frameworks */,
+				09F51F311F1FC8E10051C531 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,24 +171,21 @@
 			children = (
 				091C20E01E1C1B8A00EB641D /* DatosViewController.swift */,
 				091C20DE1E1C1B7B00EB641D /* MapaViewController.swift */,
-				091C20E21E1C1B9A00EB641D /* GraficaViewController.swift */,
-				091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */,
 				091C20E41E1C1BB500EB641D /* VibradorViewController.swift */,
 				091C20E61E1C1BC100EB641D /* LucesViewController.swift */,
 			);
 			name = PoloInteligente;
 			sourceTree = "<group>";
 		};
-		091C20E91E1C1C1200EB641D /* PoloDemo */ = {
+		091C20E91E1C1C1200EB641D /* PoloSinConexion */ = {
 			isa = PBXGroup;
 			children = (
-				091C20F01E1C1CA700EB641D /* MapaDemoVC.swift */,
-				091C20F21E1C1CFC00EB641D /* DatosDemoVC.swift */,
-				091C20F41E1C1D1100EB641D /* GraficaDemoVC.swift */,
-				091C20F61E1C1D3600EB641D /* VibradorDemoVC.swift */,
-				091C20F81E1C1D5500EB641D /* LucesDemoVC.swift */,
+				091C20F01E1C1CA700EB641D /* MapaSinConexionVC.swift */,
+				091C20F21E1C1CFC00EB641D /* DatosSinConexionVC.swift */,
+				091C20F61E1C1D3600EB641D /* VibradorSinConexionVC.swift */,
+				091C20F81E1C1D5500EB641D /* LucesSinConexionVC.swift */,
 			);
-			name = PoloDemo;
+			name = PoloSinConexion;
 			sourceTree = "<group>";
 		};
 		091C20EA1E1C1C2E00EB641D /* LlaveroGroup */ = {
@@ -227,6 +194,7 @@
 				09F199A21E1EACB700C1EEE6 /* LlaveroCollectionVC.swift */,
 				09F199A61E1EB4B700C1EEE6 /* IconCell.swift */,
 				094D936A1E366AF300758E8E /* LlaveViewController.swift */,
+				091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */,
 			);
 			name = LlaveroGroup;
 			sourceTree = "<group>";
@@ -260,7 +228,7 @@
 				09C8CDEE1E0B42300097D674 /* ViewController.swift */,
 				02E45F4C1E21FAEE00E8E240 /* BLE */,
 				091C20EA1E1C1C2E00EB641D /* LlaveroGroup */,
-				091C20E91E1C1C1200EB641D /* PoloDemo */,
+				091C20E91E1C1C1200EB641D /* PoloSinConexion */,
 				091C20E81E1C1BCF00EB641D /* PoloInteligente */,
 				09C8CDF61E0B42300097D674 /* Assets.xcassets */,
 				09C8CDF01E0B42300097D674 /* Main.storyboard */,
@@ -300,12 +268,10 @@
 				09C8CDE51E0B422F0097D674 /* Sources */,
 				09C8CDE61E0B422F0097D674 /* Frameworks */,
 				09C8CDE71E0B422F0097D674 /* Resources */,
-				0928E4261E1DAEDA001500A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				02E114C31E1DEAE60035ED20 /* PBXTargetDependency */,
 			);
 			name = RopaInteligente;
 			productName = RopaInteligente;
@@ -360,7 +326,7 @@
 				TargetAttributes = {
 					09C8CDE81E0B422F0097D674 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = MSY85QY2GC;
+						DevelopmentTeam = 69EVUZX83W;
 						ProvisioningStyle = Automatic;
 					};
 					09C8CDFF1E0B42300097D674 = {
@@ -460,8 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */,
-				091C20F51E1C1D1100EB641D /* GraficaDemoVC.swift in Sources */,
-				091C20F91E1C1D5500EB641D /* LucesDemoVC.swift in Sources */,
+				091C20F91E1C1D5500EB641D /* LucesSinConexionVC.swift in Sources */,
 				09F199A71E1EB4B700C1EEE6 /* IconCell.swift in Sources */,
 				09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */,
 				09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */,
@@ -470,14 +435,13 @@
 				02713C4F1E1CAED400CD5EC8 /* Ubicacion.swift in Sources */,
 				094D936B1E366AF300758E8E /* LlaveViewController.swift in Sources */,
 				02E45F471E21FACC00E8E240 /* BTDiscovery.swift in Sources */,
-				091C20F71E1C1D3600EB641D /* VibradorDemoVC.swift in Sources */,
+				091C20F71E1C1D3600EB641D /* VibradorSinConexionVC.swift in Sources */,
 				023103631E23319C004BF332 /* BTManager.swift in Sources */,
 				09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */,
-				091C20E31E1C1B9A00EB641D /* GraficaViewController.swift in Sources */,
 				091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */,
-				091C20F11E1C1CA700EB641D /* MapaDemoVC.swift in Sources */,
+				091C20F11E1C1CA700EB641D /* MapaSinConexionVC.swift in Sources */,
 				09EDCB061E23F8F000EB870E /* BTDelegate.swift in Sources */,
-				091C20F31E1C1CFC00EB641D /* DatosDemoVC.swift in Sources */,
+				091C20F31E1C1CFC00EB641D /* DatosSinConexionVC.swift in Sources */,
 				02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */,
 				09F199A31E1EACB700C1EEE6 /* LlaveroCollectionVC.swift in Sources */,
 				091C20E51E1C1BB500EB641D /* VibradorViewController.swift in Sources */,
@@ -503,11 +467,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		02E114C31E1DEAE60035ED20 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 02E114C21E1DEAE60035ED20 /* PBXContainerItemProxy */;
-		};
 		09C8CE021E0B42300097D674 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 09C8CDE81E0B422F0097D674 /* RopaInteligente */;
@@ -634,15 +593,14 @@
 		09C8CE151E0B42300097D674 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MSY85QY2GC;
+				DEVELOPMENT_TEAM = 69EVUZX83W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/realm-swift-2.1.2/ios/swift-3.0.2",
 				);
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.llavero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -653,15 +611,14 @@
 		09C8CE161E0B42300097D674 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MSY85QY2GC;
+				DEVELOPMENT_TEAM = 69EVUZX83W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/realm-swift-2.1.2/ios/swift-3.0.2",
 				);
 				INFOPLIST_FILE = RopaInteligente/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bearcreekmining.llavero;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -23,7 +23,6 @@ class VibradorViewController: UIViewController {
             a = 0
              sender.setImage(#imageLiteral(resourceName: "seleccionar_negro"), for: .normal)
         }
-
     }
     var b : Int = 0
     @IBAction func clicVibradorBottom(_ sender: UIButton) {
@@ -32,8 +31,8 @@ class VibradorViewController: UIViewController {
             b = 1
         }else{
             b = 0
-            sender.setImage(#imageLiteral(resourceName: "seleccionar_negro"), for: .normal)        }
-
+            sender.setImage(#imageLiteral(resourceName: "seleccionar_negro"), for: .normal)
+        }
     }
     
     override func viewDidLoad() {
