@@ -41,7 +41,7 @@ class OxigeViewController: UIViewController ,BLEDelegate {
             let index3 = dato.index(after: index2)
             let index4 = dato.characters.index(of: "/") ?? dato.endIndex
             let  rangooxi = index3..<index4
-            txtOxi.text = dato[rangooxi].appending(" % SpO2")
+            txtOxi.text = dato[rangooxi].appending(" %")
             if contador == 0{
                 imgOxi.image = UIImage(named: "ic_blood_b")
                 contador = 1
@@ -64,7 +64,7 @@ class OxigeViewController: UIViewController ,BLEDelegate {
             let index4 = dato.characters.index(of: "$") ?? dato.endIndex
             let  rangooxi = index3..<index4
             
-            txtOxi.text = dato[rangooxi].appending(" % SpO2")
+            txtOxi.text = dato[rangooxi].appending(" %")
             if contador == 0{
                 imgOxi.image = UIImage(named: "ic_blood_b")
                 contador = 1
