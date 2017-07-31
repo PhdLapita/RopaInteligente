@@ -74,22 +74,16 @@ class DatosViewController: UIViewController ,BLEDelegate  {
            
             if(dato[rangopulso] == "c"){
                 txtPulso.text = "Calculando"
+                txtTemp.text = "Calculando"
+                txtOximetro.text = "Calculando"
+
             }
             if(dato[rangopulso] == "s"){
                 txtPulso.text = "Sin señal"
-            }
-            if(dato[rangooxi] == "c"){
-                txtOximetro.text = "Calculando"
-            }
-            if(dato[rangooxi] == "s"){
                 txtOximetro.text = "Sin señal"
-            }
-            if(dato[rangopulso] == "c"){
-                txtTemp.text = "Calculando"
-            }
-            if(dato[rangopulso] == "s"){
                 txtTemp.text = "Sin señal"
             }
+            
 
         }
         else if(dato.characters.contains("&") && !dato.characters.contains("/")){
@@ -102,6 +96,7 @@ class DatosViewController: UIViewController ,BLEDelegate  {
             let  rangooxi = index3..<index4
             txtPulso.text = dato[rangopulso].appending(" lpm")
             txtOximetro.text = dato[rangooxi].appending(" % SpO2")
+            txtTemp.text = "Sin señal"
             if contador == 0{
                 imgPulso.image = UIImage(named: "ic_heart_b")
                 imgOximetro.image = UIImage(named: "ic_blood_b")
@@ -111,34 +106,43 @@ class DatosViewController: UIViewController ,BLEDelegate  {
                 imgOximetro.image = UIImage(named: "ic_blood_a")
                 contador = 0
             }
+            
             if(dato[rangopulso] == "c"){
                 txtPulso.text = "Calculando"
+                txtOximetro.text = "Calculando"
+                
             }
             if(dato[rangopulso] == "s"){
                 txtPulso.text = "Sin señal"
-            }
-            if(dato[rangooxi] == "c"){
-                txtOximetro.text = "Calculando"
-            }
-            if(dato[rangooxi] == "s"){
                 txtOximetro.text = "Sin señal"
             }
+
         }else{
             let  index0 = dato.characters.index(of: "#") ?? dato.endIndex
             let  index1 = dato.index(after: index0)
             let   index2 = dato.characters.index(of: "$") ?? dato.endIndex
             let  rangopulso = index1..<index2
             txtPulso.text = dato[rangopulso].appending(" lpm")
+            txtTemp.text = "Sin señal"
+            txtOximetro.text = "Sin señal"
+            
             if contador == 0{
                 imgPulso.image = UIImage(named: "ic_heart_b")
+                imgTemp.image = UIImage(named: "ic_temp_b")
+                imgOximetro.image = UIImage(named: "ic_blood_b")
                 contador = 1
             }else{
                 imgPulso.image = UIImage(named: "ic_heart_a")
+                imgTemp.image = UIImage(named: "ic_temp_a")
+                imgOximetro.image = UIImage(named: "ic_blood_a")
                 contador = 0
             }
 
             if(dato[rangopulso] == "c"){
                 txtPulso.text = "Calculando"
+                txtTemp.text = "Calculando"
+                txtOximetro.text = "Calculando"
+                
             }
             if(dato[rangopulso] == "s"){
                 txtPulso.text = "Sin señal"
