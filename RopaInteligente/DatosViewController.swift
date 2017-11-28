@@ -9,9 +9,14 @@
 import UIKit
 import Foundation
 class DatosViewController: UIViewController ,BLEDelegate  {
+    
   let bluetoothManager = BTManager.getInstance()
     var contador: Int = 0
     var dato: String = " "
+    var menuShowing = false
+    
+    @IBOutlet weak var sidebarluces: NSLayoutConstraint!
+    
     @IBOutlet weak var txtPulso: UILabel!
     @IBOutlet weak var imgPulso: UIImageView!
     
@@ -24,9 +29,40 @@ class DatosViewController: UIViewController ,BLEDelegate  {
     @IBOutlet weak var imgEstado: UIImageView!
     @IBOutlet weak var txtEstado: UILabel!
     
-    @IBAction func clicBack(_ sender: UIBarButtonItem) {
+    @IBAction func clicRojo(_ sender: UIButton) {
+        print("rojo?")
+        bluetoothManager.writePosition("$r#")
+    }
+    @IBAction func clicVerde(_ sender: UIButton) {
+        print("verde?")
+        bluetoothManager.writePosition("$v#")
+    }
+    @IBAction func clicAzul(_ sender: UIButton) {
+        print("azul?")
+        bluetoothManager.writePosition("$a#")
+    }
+ 
+    @IBAction func clicApagar(_ sender: UIButton) {
+        print("apagar?")
+        bluetoothManager.writePosition("$O#")
+    }
+    
+    @IBAction func clicSalir(_ sender: UIButton) {
         self.dismiss(animated: true)
         bluetoothManager.desconectando()
+    }
+    
+    @IBAction func clicBack(_ sender: UIBarButtonItem) {
+        //self.dismiss(animated: true)
+        //bluetoothManager.desconectando()
+        if(menuShowing){
+            sidebarluces.constant = -200
+        }else{
+            sidebarluces.constant = 0
+            UIView.animate(withDuration: 0.3, animations:{ self.view.layoutIfNeeded()})
+        }
+        menuShowing = !menuShowing
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +71,7 @@ class DatosViewController: UIViewController ,BLEDelegate  {
 
     override func viewWillAppear(_ animated: Bool) {
         bluetoothManager.bledelegate = self     //Nesesario para poder transferir datos del BTManager hacia el Activity mediante el uso de protocolos(similar to Interface in Android)
+        sidebarluces.constant = -200
         // Do any additional setup after loading the view.
     }
 

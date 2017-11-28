@@ -60,6 +60,9 @@ class EmparejarTableViewController: UITableViewController,BTDelegate {
         
         let peripheral = lista[indexPath.row]
       bluetoothManager.conectarDevice(periferal: peripheral)
+        UserDefaults.standard.set(peripheral.name, forKey: "periname")
+        UserDefaults.standard.set(peripheral.name, forKey: "periide")
+        
      /*  // Retain the peripheral before trying to connect
         self.peripheralBLE = peripheral
         
@@ -75,13 +78,13 @@ class EmparejarTableViewController: UITableViewController,BTDelegate {
     ////////////////////////////////Ir hacia otro Activity//////////////////////////////////////
 
     func beginApp(){
-        //let initActivity1 = self.storyboard?.instantiateViewController(withIdentifier: "polo")
+        let initActivity1 = self.storyboard?.instantiateViewController(withIdentifier: "maquina")
         let initActivity2 = self.storyboard?.instantiateViewController(withIdentifier: "polo")
         let initActivity3 = self.storyboard?.instantiateViewController(withIdentifier: "llavero2")
         let seleccionado : String = UserDefaults.standard.string(forKey: "omo")!//De accuerdo al boton presionado anteriormente se asigno un valor  a omo si es que se presiona el boton llavero, 1 para ropa inteligente y 2 para ropa inteligente sin coneccion
         switch seleccionado {
-        /*case "1":
-            self.present(initActivity1!, animated: true, completion: nil)*/
+        case "1":
+            self.present(initActivity1!, animated: true, completion: nil)
         case "2":
             self.present(initActivity2!, animated: true, completion: nil)
         case "3":

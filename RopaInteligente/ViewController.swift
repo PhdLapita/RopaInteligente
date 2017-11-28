@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setStatusBarBackgroundColor(color: #colorLiteral(red: 0.9019607843, green: 0.2901960784, blue: 0.09803921569, alpha: 1))
+        sidebar.constant = -200
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func didReceiveMemoryWarning() {
@@ -37,16 +39,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clicMenu(_ sender: UIBarButtonItem) {
-        
         if(menuShowing){
                     sidebar.constant = -200
         }else{
             sidebar.constant = 0
             UIView.animate(withDuration: 0.3, animations:{ self.view.layoutIfNeeded()})
-            
         }
         menuShowing = !menuShowing
-
     }
     
     /*@IBAction func clicPoloInteligente(_ sender: UIButton) {
@@ -55,6 +54,10 @@ class ViewController: UIViewController {
     
      @IBAction func clicLlavero(_ sender: UIButton) {
         UserDefaults.standard.setValue("3", forKey: "omo")//le asigno un valor  a omo si es que se presiona el boton llavero 1 para ropa inteligente y 2 para ropa inteligente sin conexion
+    }
+    
+    @IBAction func clicHiladora(_ sender: UIButton) {
+        UserDefaults.standard.setValue("1", forKey: "omo")//le asigno un valor  a omo si es que se presiona el boton llavero 1 para ropa inteligente y 2 para ropa inteligente sin conexion
     }
     
     

@@ -20,6 +20,7 @@ private var writeType: CBCharacteristicWriteType = .withoutResponse
 class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     var bledelegate: BLEDelegate?
     var delegate : BTDelegate? // variable optional delegate
+    var idDisconnect: Int = 1
     private var periferico: CBPeripheral?//variable optional periferico
     private      var characteristics = [String : CBCharacteristic]()
     private var positionCharacteristicRx: CBCharacteristic?//variable optional positionCharasteristic
@@ -57,6 +58,7 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func desconectando()  {
         centralManager?.cancelPeripheralConnection(periferico!)
+        idDisconnect = 0
     }
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
@@ -116,14 +118,16 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     //Cuando se desconecta el  BLE
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         // See if it was our peripheral that disconnected
-        if (peripheral == periferico) {
-            //self.bleService = nil;
-            //periferico = nil;
+        if (idDisconnect == 1) {
+           conectarDevice(periferal: periferico!)
+           idDisconnect = 0
         }
+        idDisconnect = 1
         // Start scanning for new devices
         //self.startScanning()
     }
     
+
     //////////////////////Usando el servicio del device////////////////////////////
     func startDiscoveringServices() {
         self.periferico?.discoverServices([BLEServiceUUID])
@@ -247,6 +251,23 @@ class BTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
             }
             //  periferico?.writeValue(position.data(using:String.Encoding.utf8, allowLossyConversion: true)!, for: positionCharacteristic, type: CBCharacteristicWriteType.withResponse)
         }
+    }
+    
+    func  calculateDistancia(txPower: Float , rssi: Float) -> Float{
+        //let txPower : Float = -59 //hard coded power value. Usually ranges between -59 to -65
+            
+            if (rssi == 0) {
+                return -1.0;
+            }
+            
+            let ratio = rssi*1.0/txPower;
+            if (ratio < 1.0) {
+                return pow(ratio,10);
+            }
+            else {
+                let distance =  (0.89976)*pow(ratio,7.7095) + 0.111;
+                return distance;
+            }
     }
     
     /*

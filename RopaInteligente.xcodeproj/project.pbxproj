@@ -15,7 +15,9 @@
 		02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E45F4A1E21FAE600E8E240 /* BTService.swift */; };
 		091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */; };
 		091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C20E01E1C1B8A00EB641D /* DatosViewController.swift */; };
+		094203A61FB25B9D0095DB45 /* ControlDeCalidadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094203A51FB25B9D0095DB45 /* ControlDeCalidadViewController.swift */; };
 		094D936B1E366AF300758E8E /* LlaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D936A1E366AF300758E8E /* LlaveViewController.swift */; };
+		09AE4E7D1F859B9D00CF2D65 /* ControldeVelocidadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4E7C1F859B9D00CF2D65 /* ControldeVelocidadViewController.swift */; };
 		09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEC1E0B42300097D674 /* AppDelegate.swift */; };
 		09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8CDEE1E0B42300097D674 /* ViewController.swift */; };
 		09C8CDF21E0B42300097D674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8CDF01E0B42300097D674 /* Main.storyboard */; };
@@ -78,7 +80,9 @@
 		091C20D81E1C005400EB641D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		091C20DC1E1C02B600EB641D /* EmparejarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmparejarTableViewController.swift; sourceTree = "<group>"; };
 		091C20E01E1C1B8A00EB641D /* DatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatosViewController.swift; sourceTree = "<group>"; };
+		094203A51FB25B9D0095DB45 /* ControlDeCalidadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlDeCalidadViewController.swift; sourceTree = "<group>"; };
 		094D936A1E366AF300758E8E /* LlaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LlaveViewController.swift; sourceTree = "<group>"; };
+		09AE4E7C1F859B9D00CF2D65 /* ControldeVelocidadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControldeVelocidadViewController.swift; sourceTree = "<group>"; };
 		09C8CDE91E0B42300097D674 /* RopaInteligente.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RopaInteligente.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8CDEC1E0B42300097D674 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C8CDEE1E0B42300097D674 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,22 @@
 			name = LlaveroGroup;
 			sourceTree = "<group>";
 		};
+		094203A11FB25B620095DB45 /* ControlDeCalidad */ = {
+			isa = PBXGroup;
+			children = (
+				094203A51FB25B9D0095DB45 /* ControlDeCalidadViewController.swift */,
+			);
+			name = ControlDeCalidad;
+			sourceTree = "<group>";
+		};
+		09AE4E811F859BA500CF2D65 /* MaquinaHiladora */ = {
+			isa = PBXGroup;
+			children = (
+				09AE4E7C1F859B9D00CF2D65 /* ControldeVelocidadViewController.swift */,
+			);
+			name = MaquinaHiladora;
+			sourceTree = "<group>";
+		};
 		09C8CDE01E0B422F0097D674 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +219,8 @@
 			children = (
 				09C8CDEC1E0B42300097D674 /* AppDelegate.swift */,
 				09C8CDEE1E0B42300097D674 /* ViewController.swift */,
+				094203A11FB25B620095DB45 /* ControlDeCalidad */,
+				09AE4E811F859BA500CF2D65 /* MaquinaHiladora */,
 				02E45F4C1E21FAEE00E8E240 /* BLE */,
 				091C20EA1E1C1C2E00EB641D /* LlaveroGroup */,
 				091C20E81E1C1BCF00EB641D /* PoloInteligente */,
@@ -396,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094203A61FB25B9D0095DB45 /* ControlDeCalidadViewController.swift in Sources */,
 				091C20E11E1C1B8A00EB641D /* DatosViewController.swift in Sources */,
 				09C8CDEF1E0B42300097D674 /* ViewController.swift in Sources */,
 				09C8CDED1E0B42300097D674 /* AppDelegate.swift in Sources */,
@@ -407,6 +430,7 @@
 				09C8CDF51E0B42300097D674 /* RopaInteligente.xcdatamodeld in Sources */,
 				091C20DD1E1C02B600EB641D /* EmparejarTableViewController.swift in Sources */,
 				020AD6911F28022D00F7B98B /* TempViewController.swift in Sources */,
+				09AE4E7D1F859B9D00CF2D65 /* ControldeVelocidadViewController.swift in Sources */,
 				09EDCB061E23F8F000EB870E /* BTDelegate.swift in Sources */,
 				02E45F4B1E21FAE600E8E240 /* BTService.swift in Sources */,
 			);
